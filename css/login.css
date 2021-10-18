@@ -46,14 +46,32 @@ a {
     border-radius: 25px;border: 1px solid white;
 }
 
-@media only screen and (max-width: 900px){
+.logo {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+.title {
+    width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
     .login-box {
-        width: 60%;
+        width: 50%; 
     }
 }
 
-@media only sreen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .login-box {
-        width: 90%;
+        width: 70%; 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .login-box {
+        width: 100%; 
+        border: none;
+        box-shadow: none;
     }
 }
