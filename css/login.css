@@ -5,7 +5,7 @@
     border: 1px solid white;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 gray;
-    width: 40%;
+    width: 500px;
     height: 400px;
     margin: 0 auto;
     margin-top: 40px;
@@ -29,7 +29,7 @@ input {
     height: 40px;
     margin: 0 auto;
     border-radius: 4px;
-    border: 1px solid lightgray;
+    border: 1px solid black;
 }
 a {
     text-decoration: none;
@@ -40,31 +40,31 @@ a {
 }
 #login {
     color: white;
-    background-color: green;
-    opacity: 0.8;
-    width: 60%;
-    border-radius: 25px;border: 1px solid white;
+    background-color: #EF5350;
+    opacity: 1;
+    width: 40%;
+    border-radius: 25px;
+    border: 1px solid white;
 }
 
 .logo {
-    width: 20%;
+    width: 200px;
     height: auto;
     float: left;
 }
 
 .title {
-    width: 80%;
-}
-
-@media only screen and (max-width: 1200px) {
-    .login-box {
-        width: 50%; 
-    }
+    width: calc(100% - 200px);
 }
 
 @media only screen and (max-width: 900px) {
-    .login-box {
-        width: 70%; 
+    .logo {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .title {
+        width: 100%;
     }
 }
 
