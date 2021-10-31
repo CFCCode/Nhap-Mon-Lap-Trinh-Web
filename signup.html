@@ -3,24 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="clone_login.css">
+    <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="header">
-        <img src="./img/Logo.png" alt="logo heading" class = "logo">
-        <h1 class="title heading">Nesscessary</h1>
+        <img src="/Du_An/Du_An_img/1280px-Carrefour_Market_logo.svg.png" alt="logo" class = "header logo">
+        <h1 class="header title">Nesscessary</h1>
     </div>
     <div class="login-box">
-        <h1>Log In</h1>
+        <h1>Sign In</h1>
         <form action="post">
-            <label for="email">Email</label><br>
-            <input type="text" name="email" id="email" placeholder="Email or phone number" required><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Password" minlength="8" required><br>
-            <label for="confirm">Confirm Password</label><br>
-            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" minlength="8" required><br><br>
-            <input type="submit" id="login" value="Sign up">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" class="email" placeholder="Email or phone number" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" class="password" placeholder="Password" minlength="8" required><br><br>
+            <input type="submit" class="sign-in" value="Sign in" >
+            <a href="#" class="forget-pw">Forgot password?</a>
+            <a href="signup.html" class="sign-up">Sign up</a>
         </form>
     </div>
 </body>
