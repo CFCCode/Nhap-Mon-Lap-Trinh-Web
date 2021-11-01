@@ -28,7 +28,6 @@
 
         .navbar {
             display: flex;
-            /* justify-content: space-around; */
             position: fixed;
             top: 62px;
             z-index: 10;
@@ -111,47 +110,39 @@
             margin-top: 20px;
             width: 200px;
             height: 100vh;
-            background-color: grey;
+            background-color: lightgray;
             float: left;
         }
 
         .col-menu a {
             display: block;
             text-decoration: none;
-            text-align: center;
-            padding: 8px;
-            color: white;
-        }
-
-        .col-menu a:hover {
-            background-color: black;
-            color: red;
+            color: black;
         }
 
         .col-menu-child {
             position: absolute;
             width: 100%;
         }
-        
-        .col-menu-child > a {
+
+        .col-menu-child>a {
             text-align: left;
-            padding-left: 30px;
+            padding-left: 20px;
+            display: block;
+            padding: 8px;
         }
 
-        .details li{
-            display: none;
-            width: 100%;
+        .col-menu-child img {
+            width: 20px;
+            height: 20px;
             position: absolute;
-            right: 0;
-            top: 0;
+            right: 10;
         }
 
-        .col-menu:hover {
-            display: block;
-        }
-
-        .col-menu-child > li:hover .details li {
-            display: block;
+        .details a {
+            text-align: center;
+            padding: 4px;
+            display: none;
         }
 
         .col-content {
@@ -170,8 +161,6 @@
             margin: 10px;
             display: inline-block;
         }
-
-
     </style>
 </head>
 
@@ -194,7 +183,7 @@
     <div class="container">
         <ul class="col-menu">
             <li class="col-menu-child">
-                <a href="">Rice</a>
+                <a href="">Rice<spand><img src="img/expand.png" alt="expand"></spand></a>
                 <ul class="details">
                     <li><a href="">com chien</a></li>
                     <li><a href="">com nguoi</a></li>
@@ -203,106 +192,12 @@
             </li>
         </ul>
         <div class="col-content">
-            <div class="item">
-                <p>Image</p>
-                <p>tilte</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-            <div class="item">
-                <p>Image</p>
-                <p>title</p>
-                <div class="detail">
-                    <p>price</p>
-                    <p>numbers</p>
-                </div>
-            </div>
-
+            
         </div>
     </div>
-
+    <script>
+        
+    </script>
 </body>
 
 </html>

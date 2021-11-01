@@ -13,7 +13,7 @@
 
     body {
       font-family: Verdana, sans-serif;
-      margin: 0 background-color: #b2bec3;
+      margin: 0;
     }
 
     .mySlides {
@@ -24,7 +24,7 @@
       vertical-align: middle;
     }
 
-    /* Slideshow container */
+    
     .slideshow-container {
       max-width: 1000px;
       position: relative;
@@ -32,36 +32,7 @@
       top: 10px;
     }
 
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
+    
     .text {
       color: #f2f2f2;
       font-size: 15px;
@@ -72,7 +43,7 @@
       text-align: center;
     }
 
-    /* Number text (1/3 etc) */
+    
     .numbertext {
       color: #f2f2f2;
       font-size: 12px;
@@ -81,9 +52,8 @@
       top: 0;
     }
 
-    /* The dots/bullets/indicators */
+    
     .dot {
-      cursor: pointer;
       height: 15px;
       width: 15px;
       margin: 0 2px;
@@ -93,12 +63,11 @@
       transition: background-color 0.6s ease;
     }
 
-    .active,
-    .dot:hover {
+    .active {
       background-color: #717171;
     }
 
-    /* Fading animation */
+    
     .fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 1.5s;
@@ -107,8 +76,8 @@
     }
 
     .fade img {
-      width: 80vw;
-      height: 400px;
+      width: 60%;
+      height: auto;
     }
 
     @-webkit-keyframes fade {
@@ -128,16 +97,6 @@
 
       to {
         opacity: 1
-      }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-
-      .prev,
-      .next,
-      .text {
-        font-size: 11px
       }
     }
 
@@ -205,7 +164,7 @@
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="./img/food1.jpeg" style="width:100%">
+      <img src="./img/pic1.jfif" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
 
@@ -225,14 +184,13 @@
   <br>
 
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
   <script>
     var slideIndex = 0;
     showSlides();
-
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
@@ -247,7 +205,7 @@
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      setTimeout(showSlides, 2000);
     }
   </script>
   <hr><br>
