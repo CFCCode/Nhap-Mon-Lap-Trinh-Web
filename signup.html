@@ -1,26 +1,37 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="css/signin.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="clone_signup.css">
+    <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+   
     <div class="header">
-        <img src="./img/Logo.png" alt="logo heading" class = "logo">
-        <h1 class="title heading">Nesscessary</h1>
+        <a href="#"><img src="/img/Logo.png" alt="logo" class="header logo"></a>
+        <a href="#" class="header title">Cần trợ giúp?</a>
     </div>
     <div class="login-box">
         <h1>Sign Up</h1>
         <form action="post">
             <label for="email">Email:</label><br>
-            <input type="text" name="email" id="email" placeholder="Email or phone number" required><br>
+            <input type="email" name="email" class="email" placeholder="Email or phone number" required><br>
             <label for="password">Password:</label><br>
-            <input type="password" name="password" id="password" placeholder="Password" minlength="8" required><br><br>
-            <input type="submit" id="login" value="Sign In" class="sign-in"><br>
-            <a class="sign-up" href="signin.html" style="color: rgb(46, 179, 46);">Sign In</a>
+            <input type="password" name="password" class="password" placeholder="Password" minlength="8" required><br>
+            <label for="password">Confirm Password:</label><br>
+            <input type="password" name="password" class="password" placeholder="Confirm password" minlength="8"
+                required><br>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="">Facebook</a>
+                <a href="https://www.google.com/"><img src="/img/google.jpg" alt="">Google</a>
+            </div>
+            <input type="submit" class="sign-up" value="Sign up">
         </form>
-    </div>
+
 </body>
+
 </html>
