@@ -133,12 +133,12 @@ input {
     }
     .social-icons a {
         margin: 20px auto;
-        width: 30vw;
+        width: 7rem;
     }
     .social-icons img {
         height: 2rem;
     }
-    .social-icons:nth-child(1) {
-       
-    }
+   .sign-up {
+       width: 6rem;
+   }
 }
