@@ -8,6 +8,7 @@
 body {
     background: #ffffff;
     font-family: 'roboto', sans-serif;
+    background-image: url(/img/signup_background.jpg);
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     margin: 1rem;
     height: auto;
 }
-
 
 .login-box {
     border: 1px solid white;
