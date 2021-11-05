@@ -285,3 +285,21 @@ nav .navigation li a:hover:after {
     display: block;
     color: #ffff;
 }
+
+@media only screen and (max-width: 1400px) {
+    nav .navigation {
+        padding: 4px;
+    }
+
+    nav .navigation li {
+        padding: 4px;
+    }
+
+    nav .navigation li a{
+        padding: 8px;
+    }
+
+    .recently-items {
+        margin-top: 8px;
+    }
+}
