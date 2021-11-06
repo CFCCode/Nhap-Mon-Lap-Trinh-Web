@@ -41,10 +41,9 @@ form {
 }
 
 header .header-logo {
-    width: 20rem;
+    width: 200px;
     object-fit: cover;
 }
-
 header .header-input {
     width: 30rem;
     padding: 1.2rem 0 1.2rem 1.2rem;
@@ -52,8 +51,9 @@ header .header-input {
     outline: none;
     font-size: 1.2rem;
 }
+header span {
 
-header span {}
+}
 
 header .sign-in a {
     text-decoration: none;
@@ -82,12 +82,12 @@ nav .navigation {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    background: #448AFF;
-    padding: 1rem;
+    background: #4454ff;
+    padding: 10px;
 }
 
 nav .navigation li {
-    padding: 1rem;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -101,11 +101,11 @@ nav .navigation li i {
 nav .navigation li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1rem;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
     letter-spacing: 1px;
     position: relative;
 }

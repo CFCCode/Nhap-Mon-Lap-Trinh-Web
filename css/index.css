@@ -295,6 +295,7 @@ nav .navigation li a:hover:after {
 .footer-col h4 {
     font-size: 20px;
     color: #ecf0f1;
+    color:  skyblue;
     text-transform: uppercase;
     margin-bottom: 8px;
 }
@@ -313,8 +314,9 @@ nav .navigation li a:hover:after {
     display: block;
     color: #ffff;
     margin-bottom: 16px;
- 
+
 }
+
 
 @media only screen and (max-width: 1400px) {
     .footer {
