@@ -72,7 +72,14 @@ form {
     .submit {
         width: 10rem;
         float: right;
-        
+    }
+    nav .navigation{
+        margin: 0 auto;
+    }
+    nav .navigation li {
+        margin: 1rem;
+        border: solid 1px white;
+        border: none;
     }
    
 }

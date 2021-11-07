@@ -113,17 +113,17 @@ nav .navigation li a {
 nav .navigation li a:after {
     position: absolute;
     content: '';
-    background-color: #fff;
+    background: rgba(154, 236, 219,1.0);
     height: 4px;
     width: 0;
     left: 0;
-    bottom: -10px;
+    bottom: -6px;
     transition: .4s ease-in-out;
 }
 
 nav .navigation li a:hover {
     color: #fff;
-    background: #0D47A1;
+    background: #1e90ff;
     border-radius: 60px;
 }
 
