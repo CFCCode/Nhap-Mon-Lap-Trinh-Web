@@ -174,7 +174,6 @@ nav .navigation li a:hover:after {
     display: flex;
     margin-top: 1rem;
 }
-
 .show2 {
     margin-top: 1.6rem;
     width: auto;
@@ -187,7 +186,6 @@ nav .navigation li a:hover:after {
     height: 30rem;
     border-radius: 1rem;
 }
-
 .show-child img {
     cursor: pointer;
     width: 90%;
@@ -318,7 +316,7 @@ nav .navigation li a:hover:after {
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1024px) {
     .footer {
         margin-top: 2rem;
     }
@@ -338,12 +336,35 @@ nav .navigation li a:hover:after {
         margin-top: 8px;
     }
 }
-@media only screen and (max-width: 700px) {
-    .footer-col {
-        width: 50%;
-    } 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        display: flex;
+    }
+    header .header-input {
+        width: 20rem;
+    }
+    .recently-items {
+        position: fixed;
+    }
+    nav .navigation li {
+        padding: 4px;
+    }
+    nav .navigation li a{
+        padding: 8px;
+    }
+    .sign-in {
+        display: block;
+        margin: 2rem;
+    }
+    .sign-up {
+        display: block;
+        margin: 1.5rem;
+    }
     .footer {
         margin-top: 2rem;
+    }
+    .footer-col {
+        margin-bottom: 3rem;
     }
     .footer-col:nth-child(1) {
         margin-bottom: 3rem;
@@ -363,13 +384,27 @@ nav .navigation li a:hover:after {
     .social-links > a {
         margin-bottom: 8px;
     }
+    
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 320px) and (max-width:767px) {
+
+    .show {
+        width: 100%;
+    }
+    .show-child {
+        width: 50%;
+    }
     .footer .container {
         margin-top: 2rem;
-        width: 100vw;
+        width: 100%;
     }
     .footer-col li a {
         line-height: 2;
+        text-align: center;
+        display: flex;
+        align-items: center;
     }
+    .footer-col {
+        width: 50%;
+    } 
 }

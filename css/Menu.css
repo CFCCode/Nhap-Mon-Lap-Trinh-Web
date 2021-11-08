@@ -10,7 +10,6 @@ body {
     background: skyblue;
     font-family: 'Montserrat', sans-serif;
 }
-
 .menu-name {
     max-width: 18rem;
     background: #1e1e1e;
@@ -22,22 +21,20 @@ body {
     align-items: center;
     line-height: 6.5rem;
 }
-
 .menu-title {
     font-weight: bold;
     font-size: 3rem;
 }
 
 .sidebar {
-    max-width: 18rem;
+    width: 18rem;
+    position: fixed;
 }
-
 ul {
     background: #1e1e1e;
     overflow: hidden;
     height: 100vh;
 }
-
 .dropdown {
     position: relative;
     display: block;
@@ -67,7 +64,6 @@ ul {
 .dropdown-btn:hover span {
     transform: translateY(-50%) rotate(-180deg);
 }
-
 .dropdown:hover {
     color: cyan;
     box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;

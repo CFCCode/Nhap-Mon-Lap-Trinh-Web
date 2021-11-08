@@ -1,8 +1,9 @@
 body {
-    background-image: url(/img/product_bg4.jpg) ;
+    background-image: url(/img/product_bg4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 form {
     background-color: #fff;
     width: 60%;
@@ -10,15 +11,17 @@ form {
     height: 20rem;
     border-radius: 8px;
 }
+
 .choose-file {
     padding: 1rem;
     font-size: 1rem;
 }
+
 .name, .price {
     border-radius: 8px;
     border: 1px solid white;
     padding: 1rem;
-    background-color: rgba(223, 228, 234,1.0);
+    background-color: rgba(223, 228, 234, 1.0);
     width: 50%;
     display: block;
     margin: 3rem auto;
@@ -34,12 +37,7 @@ form {
 .submit {
     border-radius: 4px;
     border: 1px solid white;
-    background: linear-gradient(to left, rgba(129, 236, 236,1.0) , 
-    rgba(0, 206, 201,1.0), 
-    rgba(85, 239, 196,1.0),
-     rgba(0, 184, 148,1.0)),
-     rgba(76, 209, 55,1.0);
-     
+    background: linear-gradient(to left, rgba(129, 236, 236, 1.0), rgba(0, 206, 201, 1.0), rgba(85, 239, 196, 1.0), rgba(0, 184, 148, 1.0)), rgba(76, 209, 55, 1.0);
     color: #fff;
     padding: 1rem 1.5rem;
     margin-top: 3rem;
@@ -49,7 +47,9 @@ form {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 900px) {
+/* Desktop, PC */
+
+@media only screen and (min-width: 1024px) {
     form {
         width: 70%;
     }
@@ -58,28 +58,42 @@ form {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     form {
-        width: 90%;
+        width: 70%;
     }
     .name, .price {
-        width: 60%;
+        width: 40%;
     }
-    nav ul  {
-        display: flex;
-        flex-direction: column;
-    }
+    
     .submit {
         width: 10rem;
         float: right;
     }
-    nav .navigation{
+    nav .navigation {
         margin: 0 auto;
     }
-    nav .navigation li {
-        margin: 1rem;
-        border: solid 1px white;
-        border: none;
+    
+    .submit {
+        margin-bottom: 2rem;
     }
-   
+}
+
+@media  screen and (min-width:320px) and (max-width: 767px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .navigation li {
+      margin: 1rem; 
+    } 
+    form {
+        width: 90%;
+    }
+    .submit {
+        margin-bottom: 2rem;
+    }
+    .name, .price {
+        width: 65%;
+    }
 }
