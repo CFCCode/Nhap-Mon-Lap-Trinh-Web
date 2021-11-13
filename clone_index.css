@@ -18,9 +18,11 @@ header {
     height: auto;
     flex-wrap: wrap;
 }
-.participate > span  {
+
+.participate>span {
     margin: 10px;
 }
+
 form {
     margin: 0;
 }
@@ -68,7 +70,12 @@ header .sign-in a {
     color: white;
     border-radius: 8px;
 }
-
+.sign-in:hover  {
+    opacity: .8;
+}
+.sign-up:hover {
+    opacity: .7;
+}
 .sign-up a {
     text-decoration: none;
     background: black;
@@ -79,6 +86,7 @@ header .sign-in a {
 
 nav {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 nav .navigation {
@@ -122,8 +130,9 @@ nav .navigation li a:after {
     width: 0;
     left: 0;
     bottom: -7px;
-    transition: .4s ease-in-out;
+    transition: .25s ease-in-out;
 }
+
 
 nav .navigation li a:hover {
     color: #fff;
@@ -141,11 +150,12 @@ nav .navigation li a:hover:after {
     margin-top: 1.5rem;
     background: #fff;
     padding: 8px;
+    overflow-x: scroll;
 }
 
 .recently-items .title {
     padding: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     line-height: 1rem;
 }
@@ -172,12 +182,15 @@ nav .navigation li a:hover:after {
     text-decoration: none;
     color: black;
 }
+.list-items li a:hover {
+    opacity: 0.8;
+}
 
 .show {
     width: auto;
     display: grid;
     margin-top: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10px;
 }
 
@@ -197,7 +210,9 @@ nav .navigation li a:hover:after {
     align-items: center;
     justify-content: center;
 }
-
+.show-child img:hover {
+    opacity: .8;
+}
 .show-child .name {
     display: block;
     width: auto;
@@ -293,14 +308,13 @@ nav .navigation li a:hover:after {
     font-weight: 500;
 }
 
-
 .footer-col li a:hover {
     padding-left: 10px;
 }
 
 .footer-col li a:hover {
-     color: cyan; 
-     text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff; 
+    color: cyan;
+    text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff;
 }
 
 .footer-col h4 {
@@ -346,23 +360,20 @@ nav .navigation li a:hover:after {
     background-color: rgba(255, 255, 255, 0.2);
     line-height: 40px;
     text-align: center;
-    animation:  animate 4s linear infinite;
+    animation: animate 4s linear infinite;
 }
+
 @keyframes animate {
-    0%, 18%, 20% , 50%, 60%, 65% , 80% , 90% {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90% {
         color: #0e3742;
         text-shadow: none;
     }
-    18.1%, 20.1%, 30%, 50% , 65.1% , 80.1%, 90.1% , 100%
-    {
+    18.1%, 20.1%, 30%, 50%, 65.1%, 80.1%, 90.1%, 100% {
         color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
     }
 }
+
 .social-links a:hover {
     background-color: #ffffff;
     color: #000;
@@ -376,7 +387,7 @@ nav .navigation li a:hover:after {
         padding: 8px;
     }
     nav .navigation li a {
-        padding: 8px;
+        padding: 12px;
     }
     .recently-items {
         margin-top: 8px;
@@ -394,7 +405,7 @@ nav .navigation li a:hover:after {
         padding: 4px;
     }
     nav .navigation li a {
-        padding: 8px;
+        padding: 12px;
     }
     .sign-in {
         display: block;
@@ -431,7 +442,10 @@ nav .navigation li a:hover:after {
 @media screen and (min-width: 320px) and (max-width:480px) {
     header .header-logo {
         display: none;
-        }
+    }
+    header  {
+        padding: 2rem;
+    }
     header .header-input {
         width: 15rem
     }
