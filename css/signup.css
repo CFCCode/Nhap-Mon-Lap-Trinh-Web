@@ -44,10 +44,11 @@ label {
 .login-box h1 {
     text-align: center;
     font-size: 40px;
-    background: -webkit-linear-gradient(rgba(112, 161, 255,.7), rgba(55, 66, 250,.8), rgba(83, 82, 237,.8));
+    background: -webkit-linear-gradient(rgba(112, 161, 255, .7), rgba(55, 66, 250, .8), rgba(83, 82, 237, .8));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 input {
     margin-top: 20px;
     padding: 16px;
@@ -68,6 +69,7 @@ input {
     cursor: pointer;
     margin-top: 16px;
 }
+
 .line {
     text-align: center;
     position: relative;
@@ -93,6 +95,7 @@ input {
     position: relative;
     z-index: 2;
 }
+
 .social-icons {
     display: flex;
     align-items: center;
@@ -100,10 +103,12 @@ input {
     max-width: 400px;
     margin: 0 auto;
 }
+
 .social-icons img {
     margin-right: 5px;
     height: 32px;
 }
+
 .social-icons a {
     display: flex;
     align-items: center;
@@ -117,58 +122,87 @@ input {
     z-index: 10000;
     font-size: 18px;
 }
+
 .social-icons a:hover {
     opacity: 0.8;
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (min-width: 1024px) {
     .logo {
         display: block;
-        margin: 20px auto;
+        margin: 20px;
         width: 200px;
         height: 60px;
     }
     .title {
-       display: block;
-       float: 0;
-       clear:both;
+        display: block;
+        float: 0;
+        clear: both;
     }
     input {
         width: 80%;
     }
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (min-width: 769px) and (max-width:1023px) {
     .login-box {
-        width: 100%;
-        height: 600px;
+        width: 60%;
+        height: 580px;
     }
     .input {
         width: 80%;
     }
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+    }
 }
-@media only screen and (max-width: 400px) {
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    label {
+        padding-left: 27px;
+    }
     .login-box {
-        height: 635px;
+        width: 60%;
+        height: 580px;
+    }
+    input {
+        width: 70%;
+    }
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+        width: 7rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .login-box {
+        height: 650px;
+        width: 75%;
+        border: none;
+        box-shadow: none;
     }
     .social-icons {
         display: block;
     }
-    .social-icons:nth-child(1) {
-        margin: 0;
-    }
     .social-icons a {
         margin: 20px auto;
         width: 7rem;
+        display: flex;
+        justify-content: center;
     }
     .social-icons img {
         height: 2rem;
     }
-   .sign-up {
-       width: 6rem;
-   }
-}
-@media only screen and (max-width: 300px) {
-    .login-box {
-        height: 655px;
+    .sign-up {
+        width: 8rem;
+    }
+    .login-box h1 {
+        padding-top: 1rem;
     }
 }

@@ -185,14 +185,21 @@ nav .navigation li a:hover:after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
 }
+<<<<<<< HEAD
 
+=======
+.show2 {
+    margin-top: 1.6rem;
+    width: auto;
+    display: flex;
+}
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
 .show-child {
     background: #fff;
     margin: 1rem 0 0 1rem;
     height: 22rem;
     border-radius: 1rem;
 }
-
 .show-child img {
     cursor: pointer;
     width: 90%;
@@ -353,6 +360,7 @@ nav .navigation li a:hover:after {
     text-align: center;
     animation:  animate 4s linear infinite;
 }
+<<<<<<< HEAD
 @keyframes animate {
     0%, 18%, 20% , 50%, 60%, 65% , 80% , 90% {
         color: #0e3742;
@@ -366,6 +374,13 @@ nav .navigation li a:hover:after {
         0 0 40px #03bcf4,
         0 0 80px #03bcf4,
         0 0 160px #03bcf4;
+=======
+
+
+@media only screen and (min-width: 1024px) {
+    .footer {
+        margin-top: 2rem;
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
     }
 }
 .social-links a:hover {
@@ -386,6 +401,7 @@ nav .navigation li a:hover:after {
     .recently-items {
         margin-top: 8px;
     }
+<<<<<<< HEAD
     .footer {
         margin-top: 2rem;
     }
@@ -394,6 +410,43 @@ nav .navigation li a:hover:after {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     header .header-input {
         width: 20rem;
+=======
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    
+    header {
+        display: flex;
+    }
+    header .header-input {
+        width: 20rem;
+    }
+    
+    nav .navigation li {
+        padding: 4px;
+    }
+    nav .navigation li a{
+        padding: 8px;
+    }
+    .sign-in {
+        display: block;
+        margin: 2rem;
+    }
+    .sign-up {
+        display: block;
+        margin: 1.5rem;
+    }
+    .footer {
+        margin-top: 2rem;
+    }
+    .footer-col {
+        margin-bottom: 3rem;
+    }
+    .footer-col:nth-child(1) {
+        margin-bottom: 3rem;
+    }
+    .footer-col:nth-child(2) {
+        margin-bottom: 3rem;
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
     }
     nav .navigation li {
         padding: 4px;
@@ -415,7 +468,9 @@ nav .navigation li a:hover:after {
     .social-links>a {
         margin-bottom: 8px;
     }
+    
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 481px) and (max-width:768px) {
     nav .navigation {
@@ -450,6 +505,22 @@ nav .navigation li a:hover:after {
     }
     .show-child .name, .show-child .price {
         padding: 10px;
+=======
+@media only screen and (min-width: 481px) and (max-width:768px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    body {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .show {
+        width: 100%;
+    }
+    .show-child {
+        width: 50%;
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
     }
     .footer .container {
         margin-top: 2rem;
@@ -460,6 +531,7 @@ nav .navigation li a:hover:after {
         text-align: center;
         display: flex;
         align-items: center;
+<<<<<<< HEAD
         margin-bottom: 8px;
     }
     .footer-col {
@@ -467,5 +539,10 @@ nav .navigation li a:hover:after {
     }
     .footer {
         padding: 40px 16px;
+=======
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
     }
+    .footer-col {
+        width: 50%;
+    } 
 }

@@ -10,13 +10,7 @@ body {
     background: #ecf0f1;
 }
 
-header {
-    margin: 1.2rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: auto;
-}
+
 
 form {
     margin: 0;
@@ -26,23 +20,10 @@ form {
     position: relative;
 }
 
-.header-icon__search {
-    color: #666;
-    font-size: 1.6rem;
-    border-radius: 6px;
-    font-weight: thin;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 100000;
-    top: 33px;
-    transform: translateY(-50%);
-    right: 25px;
-}
-
 header .header-logo {
-    width: 200px;
+    width: 230px;
     object-fit: cover;
+    margin: 20px;
 }
 header .header-input {
     width: 30rem;
@@ -51,6 +32,10 @@ header .header-input {
     outline: none;
     font-size: 1.2rem;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3798cac0096295a113f24f3a7c063075a62f5841
 
 header .sign-in a {
     text-decoration: none;
@@ -88,7 +73,7 @@ nav .navigation {
 }
 
 nav .navigation li {
-    padding: 10px;
+    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -105,10 +90,10 @@ nav .navigation li a {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 1rem;
     transition: .4s ease-in-out;
     letter-spacing: 1px;
     position: relative;
+    padding: 10px;
 }
 
 nav .navigation li a:after {
@@ -132,20 +117,3 @@ nav .navigation li a:hover:after {
     width: 100%;
 }
 
-@media only screen and (max-width: 1400px) {
-    nav .navigation {
-        padding: 4px;
-    }
-
-    nav .navigation li {
-        padding: 4px;
-    }
-
-    nav .navigation li a{
-        padding: 8px;
-    }
-
-    .recently-items {
-        margin-top: 8px;
-    }
-}
