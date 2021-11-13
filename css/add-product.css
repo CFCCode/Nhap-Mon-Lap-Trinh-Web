@@ -1,28 +1,24 @@
 body {
-    background-image: url(/img/product_bg4.jpg);
+    background-image: url(/img/product_bg4.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 form {
     background-color: #fff;
     width: 60%;
     margin: 40px auto;
     height: 20rem;
     border-radius: 8px;
-    position: relative;
 }
-
 .choose-file {
     padding: 1rem;
     font-size: 1rem;
 }
-
 .name, .price {
     border-radius: 8px;
     border: 1px solid white;
     padding: 1rem;
-    background-color: rgba(223, 228, 234, 1.0);
+    background-color: rgba(223, 228, 234,1.0);
     width: 50%;
     display: block;
     margin: 3rem auto;
@@ -31,14 +27,19 @@ form {
 
 .currency {
     position: absolute;
-    top: 65%;
-    right: 37%;
+    top: 25.4rem;
+    left: 60%;
 }
 
 .submit {
     border-radius: 4px;
     border: 1px solid white;
-    background: linear-gradient(to left, rgba(129, 236, 236, 1.0), rgba(0, 206, 201, 1.0), rgba(85, 239, 196, 1.0), rgba(0, 184, 148, 1.0)), rgba(76, 209, 55, 1.0);
+    background: linear-gradient(to left, rgba(129, 236, 236,1.0) , 
+    rgba(0, 206, 201,1.0), 
+    rgba(85, 239, 196,1.0),
+     rgba(0, 184, 148,1.0)),
+     rgba(76, 209, 55,1.0);
+     
     color: #fff;
     padding: 1rem 1.5rem;
     margin-top: 3rem;
@@ -48,102 +49,37 @@ form {
     font-weight: bold;
 }
 
-/* Desktop, PC */
-
-@media only screen and (min-width: 1024px) {
-    header .header-logo {
-        width: 250px;
-    }
-    form {
-        width: 60%;
-    }
-    .name, .price {
-        width: 300px;
-    }
-    .form {
-        position: relative;
-    }
-    .currency {
-        position: absolute;
-        top: 65%;
-        right: 43%;
-    }
-}
-@media screen and (min-width:769px) and (max-width:1023px) {
-    form {
-        width: 60%;
-        position: relative;
-    }
-    .currency {
-        position: absolute;
-        top: 65%;
-        right: 40%;
-    }
-    .name, .price {
-        width: 300px;
-    }
-} 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     form {
         width: 70%;
-        position: relative;
-    }
-    .currency {
-        position: absolute;
-        top: 65%;
-        right: 35%;
     }
     .name, .price {
-        width: 50%;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+    .name, .price {
+        width: 60%;
+    }
+    nav ul  {
+        display: flex;
+        flex-direction: column;
     }
     .submit {
         width: 10rem;
         float: right;
     }
-    nav .navigation {
+    nav .navigation{
         margin: 0 auto;
     }
-    .submit {
-        margin-bottom: 2rem;
+    nav .navigation li {
+        margin: 1rem;
+        border: solid 1px white;
+        border: none;
     }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-grow: 1;
-    }
-    
-}
-
-@media  screen and (min-width:320px) and (max-width: 480px) {
-    body {
-        overflow: hidden;
-    }
-    header .header-logo {
-        width: 200px;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    nav .navigation li  {
-      margin: 1rem;
-    } 
-    
-    form {
-        width: 90%;
-        position: relative;
-    }
-    .currency {
-        position: absolute;
-        top: 65%;
-        right: 34%;
-    }
-    .submit {
-        margin-bottom: 2rem;
-    }
-    .name, .price {
-        width: 70%;
-    }
+   
 }
