@@ -1,0 +1,92 @@
+.footer {
+    margin-top: 2rem;
+    background-color: #2f3640;
+    padding: 60px 20px;
+    line-height: 1.5;
+}
+
+.footer .container {
+    max-width: 100vw;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: #bdc3c7;
+    letter-spacing: 1.5;
+    line-height: 2.5;
+    transition: .25s ease-in-out;
+    padding: 2rem auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.footer-col li a:hover {
+    padding-left: 10px;
+}
+
+.footer-col li a:hover {
+     color: cyan; 
+     text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff; 
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: skyblue;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    transition: .25s linear;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 3px;
+    width: 0;
+    transition: .25s linear;
+}
+
+.footer-col h4:hover::before {
+    width: 50px;
+}
+
+.footer-col h4:hover {
+    cursor: default;
+    text-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6, 0 0 40px #00ffa6, 0 0 40px #00ffa6;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    display: block;
+    color: #ffff;
+    margin: 0 10px 10px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    text-align: center;
+    animation:  animate 4s linear infinite;
+}

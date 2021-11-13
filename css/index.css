@@ -11,13 +11,17 @@ body {
 }
 
 header {
-    margin: 1.2rem auto;
+    /* position: fixed; */
+    margin: 1rem auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: auto;
+    flex-wrap: wrap;
 }
-
+.participate > span  {
+    margin: 10px;
+}
 form {
     margin: 0;
 }
@@ -28,32 +32,33 @@ form {
 
 .header-icon__search {
     color: #666;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-radius: 6px;
     font-weight: thin;
-    display: flex;
     align-items: center;
     position: absolute;
     z-index: 100000;
-    top: 33px;
+    top: 28px;
     transform: translateY(-50%);
-    right: 25px;
+    right: 20px;
 }
 
 header .header-logo {
-    width: 20rem;
+    float: left;
+    clear: both;
+    width: 250px;
     object-fit: cover;
+    margin-left: 1rem;
 }
 
 header .header-input {
-    width: 30rem;
-    padding: 1.2rem 0 1.2rem 1.2rem;
+    width: 25rem;
+    padding: 1rem;
     border-radius: 8px;
     outline: none;
     font-size: 1.2rem;
+    margin-left: 5rem;
 }
-
-header span {}
 
 header .sign-in a {
     text-decoration: none;
@@ -75,6 +80,10 @@ header .sign-in a {
 
 nav {
     margin-top: 2rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav .navigation {
@@ -83,11 +92,11 @@ nav .navigation {
     align-items: center;
     list-style: none;
     background: #448AFF;
-    padding: 10px;
+    padding: 4px;
 }
 
 nav .navigation li {
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
 }
@@ -113,11 +122,11 @@ nav .navigation li a {
 nav .navigation li a:after {
     position: absolute;
     content: '';
-    background-color: #fff;
+    background-color: #00ffa6;
     height: 4px;
     width: 0;
     left: 0;
-    bottom: -10px;
+    bottom: -7px;
     transition: .4s ease-in-out;
 }
 
@@ -171,20 +180,16 @@ nav .navigation li a:hover:after {
 
 .show {
     width: auto;
-    display: flex;
+    display: grid;
     margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
 }
 
-.show2 {
-    margin-top: 1.6rem;
-    width: auto;
-    display: flex;
-}
 .show-child {
-    width: 25%;
     background: #fff;
-    margin: 1.2rem;
-    height: 30rem;
+    margin: 1rem 0 0 1rem;
+    height: 22rem;
     border-radius: 1rem;
 }
 
@@ -197,6 +202,7 @@ nav .navigation li a:hover:after {
     align-items: center;
     justify-content: center;
 }
+
 .show-child .name {
     display: block;
     width: auto;
@@ -205,6 +211,7 @@ nav .navigation li a:hover:after {
     text-align: left;
     font-size: 1rem
 }
+
 .show-child .price {
     display: block;
     width: auto;
@@ -213,6 +220,7 @@ nav .navigation li a:hover:after {
     text-align: left;
     margin-top: 10px;
 }
+
 .show-child a {
     display: block;
     text-decoration: none;
@@ -232,6 +240,7 @@ nav .navigation li a:hover:after {
     position: relative;
     z-index: 1;
 }
+
 .show-child a::before {
     content: '';
     position: absolute;
@@ -243,133 +252,220 @@ nav .navigation li a:hover:after {
     z-index: -1;
     color: white;
 }
+
 .show-child a:hover::before {
     width: 100%;
 }
+
 .show-child a:hover {
     color: black;
 }
+
 .footer {
     margin-top: 2rem;
     background-color: #2f3640;
     padding: 60px 20px;
     line-height: 1.5;
 }
+
 .footer .container {
     max-width: 100vw;
     margin: auto;
 }
+
 .footer .row {
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .footer ul {
     list-style: none;
 }
+
 .footer-col {
     width: 25%;
     padding: 0 15px;
 }
+
 .footer-col li a {
     text-decoration: none;
-    color: white;
+    color: #bdc3c7;
     letter-spacing: 1.5;
     line-height: 2.5;
-    transition: .25s  ease-in-out;
+    transition: .25s ease-in-out;
     padding: 2rem auto;
     font-size: 16px;
+    font-weight: 500;
 }
-.footer-col li a:hover ,
-.social-links > a:hover {
-    color: cyan;
-    text-shadow: 0 0 10px #00f1ff, 
-    0 0 20px #00f1ff 
-    ,0 0 40px #00f1ff
-    ,0 0 40px #00f1ff
-    ,0 0 80px #00f1ff
-    ,0 0 120px #00f1ff;
 
+
+.footer-col li a:hover {
+    padding-left: 10px;
 }
+
+.footer-col li a:hover {
+     color: cyan; 
+     text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff; 
+}
+
 .footer-col h4 {
     font-size: 20px;
-    color: #ecf0f1;
-    color:  skyblue;
+    color: skyblue;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
+    transition: .25s linear;
+    position: relative;
 }
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 3px;
+    width: 0;
+    transition: .25s linear;
+}
+
+.footer-col h4:hover::before {
+    width: 50px;
+}
+
 .footer-col h4:hover {
     cursor: default;
-    text-shadow: 0 0 10px #00ffa6, 
-    0 0 20px #00ffa6 
-    ,0 0 40px #00ffa6
-    ,0 0 40px #00ffa6;
+    text-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6, 0 0 40px #00ffa6, 0 0 40px #00ffa6;
 }
+
 .social-links {
     display: flex;
-    flex-direction: column;
 }
-.social-links > a{
+
+.social-links a {
     display: block;
     color: #ffff;
-    margin-bottom: 16px;
-
+    margin: 0 10px 10px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    text-align: center;
+    animation:  animate 4s linear infinite;
+}
+@keyframes animate {
+    0%, 18%, 20% , 50%, 60%, 65% , 80% , 90% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50% , 65.1% , 80.1%, 90.1% , 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000;
 }
 
-
-@media only screen and (max-width: 1400px) {
-    .footer {
-        margin-top: 2rem;
-    }
+@media screen and (min-width: 1024px) {
     nav .navigation {
         padding: 4px;
     }
-
     nav .navigation li {
-        padding: 4px;
-    }
-
-    nav .navigation li a{
         padding: 8px;
     }
-
+    nav .navigation li a {
+        padding: 8px;
+    }
     .recently-items {
         margin-top: 8px;
     }
-}
-@media only screen and (max-width: 700px) {
-    .footer-col {
-        width: 50%;
-    } 
     .footer {
         margin-top: 2rem;
     }
-    .footer-col:nth-child(1) {
-        margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    header .header-input {
+        width: 20rem;
     }
-    .footer-col:nth-child(2) {
-        margin-bottom: 3rem;
+    nav .navigation li {
+        padding: 4px;
     }
-    .show {
-        height: 30rem;
-    }
-    .show-child a {
+    nav .navigation li a {
         padding: 8px;
     }
-    .footer-col li a {
-        line-height: 2;
+    .sign-in {
+        display: block;
+        margin: 2rem;
     }
-    .social-links > a {
+    .sign-up {
+        display: block;
+        margin: 1.5rem;
+    }
+    .footer {
+        padding: 60px 20px;
+    }
+    .social-links>a {
         margin-bottom: 8px;
     }
 }
-@media only screen and (max-width: 400px) {
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    nav .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .show-child .name {
+        padding: 10px;
+    }
+    .show-child .price {
+        padding: 10px;
+    }
+    .footer-col {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    header .header-logo {
+        display: none;
+        }
+    header .header-input {
+        width: 15rem
+    }
+    nav .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .show-child {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .show-child .name, .show-child .price {
+        padding: 10px;
+    }
     .footer .container {
         margin-top: 2rem;
-        width: 100vw;
+        width: 100%;
     }
     .footer-col li a {
         line-height: 2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .footer {
+        padding: 40px 16px;
     }
 }

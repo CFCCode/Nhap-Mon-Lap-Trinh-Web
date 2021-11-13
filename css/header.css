@@ -51,9 +51,6 @@ header .header-input {
     outline: none;
     font-size: 1.2rem;
 }
-header span {
-
-}
 
 header .sign-in a {
     text-decoration: none;
@@ -75,6 +72,10 @@ header .sign-in a {
 
 nav {
     margin-top: 2rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav .navigation {
