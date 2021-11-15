@@ -1,0 +1,164 @@
+.footer {
+    margin-top: 2rem;
+    background-color: #2f3640;
+    padding: 60px 20px;
+    line-height: 1.5;
+}
+
+
+.footer .container {
+    max-width: 100vw;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: #bdc3c7;
+    letter-spacing: 1.5;
+    line-height: 2.5;
+    transition: .3s ease-in-out;
+    padding: 2rem auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-col li a:hover {
+    padding-left: 10px;
+}
+
+.footer-col li a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: skyblue;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    transition: .25s linear;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 3px;
+    width: 0;
+    transition: .25s linear;
+}
+
+.footer-col h4:hover::before {
+    width: 50px;
+}
+
+.footer-col h4:hover {
+    cursor: default;
+    text-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6, 0 0 40px #00ffa6, 0 0 40px #00ffa6;
+}
+
+.social-links {
+    display: flex;
+}
+
+.footer-col .social-links a {
+    display: block;
+    color: #ffff;
+    margin: 0 10px 10px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    text-align: center;
+    animation: animate 4s linear infinite;
+    position: relative;
+}
+
+.footer-col .social-links a>i {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+@keyframes animate {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 65.1%, 80.1%, 90.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    }
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .footer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .footer {
+        padding: 60px 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .footer-col {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .footer .container {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .footer-col li a {
+        line-height: 2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .footer {
+        padding: 40px 16px;
+    }
+    /* .footer::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -100px;
+        background-color: red;
+    } */
+}

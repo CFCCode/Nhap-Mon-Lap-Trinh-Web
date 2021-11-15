@@ -10,7 +10,13 @@ body {
     background: #ecf0f1;
 }
 
-
+header {
+    margin: 1.2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+}
 
 form {
     margin: 0;
@@ -20,11 +26,25 @@ form {
     position: relative;
 }
 
-header .header-logo {
-    width: 230px;
-    object-fit: cover;
-    margin: 20px;
+.header-icon__search {
+    color: #666;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    font-weight: thin;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100000;
+    top: 33px;
+    transform: translateY(-50%);
+    right: 25px;
 }
+
+header .header-logo {
+    width: 200px;
+    object-fit: cover;
+}
+
 header .header-input {
     width: 30rem;
     padding: 1.2rem 0 1.2rem 1.2rem;
@@ -32,7 +52,6 @@ header .header-input {
     outline: none;
     font-size: 1.2rem;
 }
-
 
 header .sign-in a {
     text-decoration: none;
@@ -54,6 +73,10 @@ header .sign-in a {
 
 nav {
     margin-top: 2rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav .navigation {
@@ -61,16 +84,15 @@ nav .navigation {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    background: #4454ff;
+    /* background: #4454ff; */
+    background: linear-gradient(to right, #0984e3, #a29bfe);
     padding: 10px;
 }
 
 nav .navigation li {
-    padding: 0;
     display: flex;
     align-items: center;
 }
-
 nav .navigation li i {
     margin-left: 1px;
     font-size: 1rem;
@@ -83,16 +105,16 @@ nav .navigation li a {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 12px;
     transition: .4s ease-in-out;
     letter-spacing: 1px;
     position: relative;
-    padding: 10px;
 }
 
 nav .navigation li a:after {
     position: absolute;
     content: '';
-    background: rgba(154, 236, 219,1.0);
+    background: rgba(154, 236, 219, 1.0);
     height: 4px;
     width: 0;
     left: 0;
@@ -102,10 +124,9 @@ nav .navigation li a:after {
 
 nav .navigation li a:hover {
     color: #fff;
-    background: #1e90ff;
+    background: #1e38ff;
     border-radius: 60px;
 }
-
 nav .navigation li a:hover:after {
     width: 100%;
 }

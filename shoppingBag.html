@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shoppingBag.css">
+    <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="/img/Logo.png" alt="" class="header-logo"></a>
+        <div class="form-container">
+            <form>
+                <input type="text" class="header-input" placeholder="Search here..">
+                <button type="submit" class="search-btn"><i class="fa fa-search header-icon__search"></i> </button>
+            </form>
+        </div>
+        <a href="#"><i class="fas fa-shopping-bag fa-2x" title="xem vỏ hàng"></i></a>
+        <span class="sign-in"> <a href="signin.html">Sign in</a></span>
+        <span class="sign-up"> <a href="signup.html">Sign up</a></span>
+    </header>
+    <!-- Thanh điều hướng -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home <i class="fa fa-home"></i></a></li>
+            <li><a href="food.html">Food <i class="fa fa-hotdog"></i></a></li>
+            <li><a href="drink.html">Drink <i class="fa fa-mug-hot"></i></a></li>
+            <li><a href="other.html">Khác<i class="fas fa-tasks"></i></a></li>
+            <li><a href="#root">Contact <i class="fa fa-phone"></i></a></li>
+        </ul>
+    </nav>
+    <div class="gio-hang">
+        <h2>Gio hang:</h1>
+    </div>
+    <div class="products">
+        <table>
+            <tr>
+                <th>hinh hanh</th>
+                <th>ten san pham</th>
+                <th>So luong</th>
+                <th>don gia</th>
+                <th>tong so tien</th>
+                <th>Xoa</th>
+            </tr>
+            <tr class="row-prod">
+                <td><img src="img/bo.png" alt="" width="100" height="100"></td>
+                <td>bo</td>
+                <th><input type="number" step="1" value="1"></th>
+                <td>15.000d</td>
+                <td>15.000d</td>
+                <td><i id="delete1" class="far fa-trash-alt fa-2x"></i></td>
+            </tr>
+        </table>
+    </div>
+    <div class="thanh-toan">
+        <button type="button">Thanh toan</button>
+    </div>
+    <footer id="root" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"> <i class="fa fa-facebook"></i></a>
+                        <a href="#"> <i class="fa fa-instagram"></i></a>
+                        <a href="#"> <i class="fa fa-twitter"></i></a>
+                        <a href="#"> <i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="libs/jquery-3.6.0.min.js"></script>
+</html>

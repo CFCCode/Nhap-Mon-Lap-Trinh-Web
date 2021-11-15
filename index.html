@@ -6,42 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <!-- <link rel="stylesheet" href="/css/index.css"> -->
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Logo + Ô tìm kiếm + Đăng ký + Đăng nhập -->
     <header>
-        <a href=""><img src="/img/Logo.png" alt="" class="header-logo"></a>
+        <a href="index.html"><img src="/img/Logo.png" alt="" class="header-logo"></a>
         <div class="form-container">
             <form>
                 <input type="text" class="header-input" placeholder="Search here..">
                 <button type="submit" class="search-btn"><i class="fa fa-search header-icon__search"></i> </button>
             </form>
         </div>
-        <span class="sign-in"> <a href="signin.html">Sign in</a></span>
-        <span class="sign-up"> <a href="signup.html">Sign up</a></span>
+        <a href="shoppingBag.html" target="_blank"><i class="fas fa-shopping-bag fa-2x bag-icon" title="xem vỏ hàng"></i></a>
+        <span class="sign-in"> <a href="signin.html" target="_blank">Sign in</a></span>
+        <span class="sign-up"> <a href="signup.html" target="_blank">Sign up</a></span>
     </header>
     <!-- Thanh điều hướng -->
     <nav>
         <ul class="navigation">
-            <li><a href="#">Home <i class="fa fa-home"></i></a></li>
-            <li><a href="#">Food <i class="fa fa-hotdog"></i></a></li>
-            <li><a href="#">Drink <i class="fa fa-mug-hot"></i></a></li>
-            <li><a href="#">Contact <i class="fa fa-phone"></i></a></li>
-            <li><a href="#">Help <i class="fa fa-question-circle"></i></a></li>
+            <li><a href="index.html">Home <i class="fa fa-home"></i></a></li>
+            <li><a href="food.html">Food <i class="fa fa-hotdog"></i></a></li>
+            <li><a href="drink.html">Drink <i class="fa fa-mug-hot"></i></a></li>
+            <li><a href="other.html">Khác<i class="fas fa-tasks"></i></a></li>
+            <li><a href="#root">Contact <i class="fa fa-phone"></i></a></li>
         </ul>
     </nav>
     <!-- Nhóm hàng phổ biến -->
     <div class="recently-items">
         <span class="recently-items title">Nhóm hàng phổ biến</span>
         <ul class="list-items">
-            <li><a href="#"><img src="/img/e6c52fa2f6852ba26b9cab2e67a01df4.jpg" alt="">Sữa tươi các loại</a></li>
-            <li><a href="#"><img src="/img/khau-trang-y-te.png" alt="">Khẩu trang y tế</a></li>
-            <li><a href="#"><img src="/img/myhaohao_pgfv_vccq.png" alt="">Mì gói ăn liền</a></li>
-            <li><a href="#"><img src="/img/dauan.jpg" alt="">Dầu ăn các loại</a></li>
-            <li><a href="#"><img src="/img/daugoi.webp" alt="">Dầu gội các loại</a></li>
+            <li><a href="#"><img src="/img/e6c52fa2f6852ba26b9cab2e67a01df4.jpg" alt="">Sữa tươi</a></li>
+            <li><a href="#"><img src="/img/khau-trang-y-te.png" alt="">Khẩu trang</a></li>
+            <li><a href="#"><img src="/img/myhaohao_pgfv_vccq.png" alt="">Mì gói</a></li>
+            <li><a href="#"><img src="/img/dauan.jpg" alt="">Dầu ăn</a></li>
+            <li><a href="#"><img src="/img/daugoi.webp" alt="">Dầu gội</a></li>
             <li><a href="#"><img src="/img/nuoc_rua_tay.png" alt="">Nước rửa tay</a></li>
             <li><a href="#"><img src="/img/kho_ca_chi.jpg" alt="">Khô cá chỉ</a></li>
         </ul>
@@ -72,9 +74,6 @@
             <span class="show-child price">60.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
-    </div>
-    <!-- 4 Slide bên dưới -->
-    <div class="show2">
         <div class="show-child">
             <img src="/img/e6c52fa2f6852ba26b9cab2e67a01df4.jpg" alt="">
             <span class="show-child name">Sữa Vinamilk nguyên chất</span>
@@ -99,9 +98,57 @@
             <span class="show-child price">6.000 <sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
+        <div class="show-child">
+            <img src="/img/myhaohao_pgfv_vccq.png" alt="">
+            <span class="show-child name">Mỳ hảo hảo</span>
+            <span class="show-child price">4.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/kho_ca_chi.jpg" alt="">
+            <span class="show-child name">Khô cá chỉ </span>
+            <span class="show-child price">75.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/nuoc_rua_tay.png" alt="">
+            <span class="show-child name">Nước rửa tay</span>
+            <span class="show-child price">40.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/dauan.jpg" alt="">
+            <span class="show-child name">Dầu ăn</span>
+            <span class="show-child price">25.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/daugoi.webp" alt="">
+            <span class="show-child name">Dầu gội</span>
+            <span class="show-child price">80.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/duong.png" alt="">
+            <span class="show-child name">Đường tinh luyện</span>
+            <span class="show-child price">20.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/nuoc_tuong.png" alt="">
+            <span class="show-child name">Nước tương Nam Dương</span>
+            <span class="show-child price">18.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child">
+            <img src="/img/bo.png" alt="">
+            <span class="show-child name">Bơ tươi</span>
+            <span class="show-child price">15.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
     </div>
     <!-- Phần Footer -->
-    <footer class="footer">
+    <footer id="root" class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
@@ -135,17 +182,16 @@
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div class="social-links">
-                        <a href="#"> <i class="fa fa-facebook"></i></a>
-                        <a href="#"> <i class="fa fa-instagram"></i></a>
-                        <a href="#"> <i class="fa fa-twitter"></i></a>
-                        <a href="#"> <i class="fa fa-linkedin"></i></a>
+                        <a href="#"> <i class="fas fa-facebook"></i></a>
+                        <a href="#"> <i class="fas fa-instagram"></i></a>
+                        <a href="#"> <i class="fas fa-twitter"></i></a>
+                        <a href="#"> <i class="fas fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
 </body>
-
+<script src="libs/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
 </html>

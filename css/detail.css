@@ -1,0 +1,32 @@
+.box {
+    margin:2rem;
+    width: 65vw;
+    background-color: white;
+    border: 1px solid #666;
+    height: 250px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover {
+    border-color: royalblue;
+    cursor: pointer;
+}
+.box > img {
+    width: 150px;
+}
+.box > img:active  {
+    width: 400px;
+}
+.product-images {
+    display: flex;
+    list-style: none;
+    width: 60vw;
+}
+.product-images-items  {
+    width: 2rem;
+    background-color: red;
+    margin:2rem;
+}
+
