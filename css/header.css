@@ -85,9 +85,24 @@ nav .navigation {
     align-items: center;
     list-style: none;
     /* background: #4454ff; */
-    background: linear-gradient(to right, #0984e3, #a29bfe);
+    /* background: linear-gradient(to right, #0984e3, #a29bfe); */
+    background: linear-gradient(to left , #1abc9c 50%, #0984e3 50%  ) right;
+    background-size: 200%;
     padding: 10px;
+    transition: .7s linear;
 }
+nav .navigation:hover {
+    background-position: left;
+}
+    /* 25% {
+        background: yellow ; left: 50%;
+    }
+    50% {
+        background: black;
+    }
+    75% {
+        background: pink;
+    } */
 
 nav .navigation li {
     display: flex;
