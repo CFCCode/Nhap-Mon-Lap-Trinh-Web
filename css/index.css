@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -19,9 +20,11 @@ header {
     height: auto;
     flex-wrap: wrap;
 }
-.participate > span  {
+
+.participate>span {
     margin: 10px;
 }
+
 form {
     margin: 0;
 }
@@ -38,7 +41,7 @@ form {
     align-items: center;
     position: absolute;
     z-index: 100000;
-    top: 28px;
+    top: 26px;
     transform: translateY(-50%);
     right: 20px;
 }
@@ -48,23 +51,30 @@ header .header-logo {
     clear: both;
     width: 250px;
     object-fit: cover;
-    margin-left: 1rem;
 }
 
-header .header-input {
-    width: 25rem;
+.header-input {
+    max-width: 30rem;
     padding: 1rem;
     border-radius: 8px;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 5rem;
 }
-
-header .sign-in a {
+.bag-icon {
+    color: grey;
+}
+.bag-icon:hover {
+    opacity: 0.8;
+}
+.sign-in, .sign-up {
+    display: block;
+}
+.sign-in a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1rem;
     background: #eb4d4b;
     color: white;
     border-radius: 8px;
@@ -74,14 +84,16 @@ header .sign-in a {
     text-decoration: none;
     background: black;
     color: #fff;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1rem;
     border-radius: 8px;
+    font-weight: bold;
 }
-
+.sign-in:hover,
+.sign-up:hover {
+    opacity: 0.8;
+}
 nav {
-    margin-top: 2rem;
-    position: sticky;
-    position: -webkit-sticky;
+    margin-top: 1.5rem;
     top: 0;
     z-index: 100;
 }
@@ -92,9 +104,26 @@ nav .navigation {
     align-items: center;
     list-style: none;
     background: #448AFF;
-    padding: 4px;
-}
+    padding: 10px;
+    animation: backgroundchange 10s linear infinite;
+    margin-bottom: 1rem;
+    border: 1px solid #6666;
 
+}
+@keyframes backgroundchange {
+    0% {
+        background: linear-gradient(to right, #0984e3, #a29bfe) ; left: 0;
+    }
+   25% {
+       background: linear-gradient(to right, #10ac84, #1dd1a1 ); left: 100%;
+   }
+   50% {
+       background: linear-gradient(to left, #ff9ff3, #5f27cd); left: 100%;
+   }
+   75% {
+       background: linear-gradient(to left, #FC427B,#B33771); left: 100%;
+   }
+}
 nav .navigation li {
     padding: 8px;
     display: flex;
@@ -117,8 +146,22 @@ nav .navigation li a {
     transition: .3s ease-in-out;
     letter-spacing: 1px;
     position: relative;
+    animation: changetext 5s linear infinite;
 }
-
+@keyframes changetext {
+    0% {
+        color: #fff 
+    }
+    25% {
+        color: #fff;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: black;
+    }
+}
 nav .navigation li a:after {
     position: absolute;
     content: '';
@@ -132,8 +175,6 @@ nav .navigation li a:after {
 
 nav .navigation li a:hover {
     color: #fff;
-    background: #0D47A1;
-    border-radius: 60px;
 }
 
 nav .navigation li a:hover:after {
@@ -209,7 +250,8 @@ nav .navigation li a:hover:after {
     height: auto;
     color: black;
     text-align: left;
-    font-size: 1rem
+    font-size: 1rem;
+    margin-left: 4px;
 }
 
 .show-child .price {
@@ -219,6 +261,7 @@ nav .navigation li a:hover:after {
     color: red;
     text-align: left;
     margin-top: 10px;
+    margin-left: 4px;
 }
 
 .show-child a {
@@ -304,8 +347,8 @@ nav .navigation li a:hover:after {
 }
 
 .footer-col li a:hover {
-     color: cyan; 
-     text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff; 
+    color: cyan;
+    text-shadow: 0 0 10px #00f1ff, 0 0 20px #00f1ff, 0 0 40px #00f1ff, 0 0 40px #00f1ff, 0 0 80px #00f1ff, 0 0 120px #00f1ff;
 }
 
 .footer-col h4 {
@@ -351,110 +394,236 @@ nav .navigation li a:hover:after {
     background-color: rgba(255, 255, 255, 0.2);
     line-height: 40px;
     text-align: center;
-    animation:  animate 4s linear infinite;
+    animation: animate 4s linear infinite;
 }
+
 @keyframes animate {
-    0%, 18%, 20% , 50%, 60%, 65% , 80% , 90% {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90% {
         color: #0e3742;
         text-shadow: none;
     }
-    18.1%, 20.1%, 30%, 50% , 65.1% , 80.1%, 90.1% , 100%
-    {
+
+    18.1%, 20.1%, 30%, 50%, 65.1%, 80.1%, 90.1%, 100% {
         color: #fff;
         text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
     }
 }
+
 .social-links a:hover {
     background-color: #ffffff;
     color: #000;
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-input {
+        min-width: 20rem;
+    }
+
     nav .navigation {
         padding: 4px;
     }
+
     nav .navigation li {
         padding: 8px;
     }
+
     nav .navigation li a {
         padding: 8px;
     }
+
     .recently-items {
         margin-top: 8px;
     }
+
     .footer {
         margin-top: 2rem;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     header .header-input {
-        width: 20rem;
+        width: 27rem;
     }
+
+    header .header-logo {
+        width: 210px;
+    }
+
     nav .navigation li {
-        padding: 4px;
-    }
-    nav .navigation li a {
         padding: 8px;
     }
-    .sign-in {
-        display: block;
-        margin: 2rem;
+
+    nav .navigation li a {
+        padding: 12px;
+        font-size: 1.4rem;
     }
-    .sign-up {
-        display: block;
-        margin: 1.5rem;
-    }
+
     .footer {
         padding: 60px 20px;
     }
+
+    .social-links>a {
+        margin-bottom: 8px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-input {
+        max-width: 25rem;
+    }
+    header .header-logo {
+        width: 200px;
+    }
+
+    header .header-input {
+        margin: 0;
+        width: 20rem;
+    }
+
+    nav .navigation li {
+        padding: 4px;
+    }
+
+    nav .navigation li a {
+        padding: 8px;
+    }
+
+    .footer {
+        padding: 60px 20px;
+    }
+
     .social-links>a {
         margin-bottom: 8px;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-logo {
+        margin-bottom: 1rem;
+        width: 210px;
+    }
+    
+    .header-input {
+        width: 25rem;
+        margin: 0 auto;
+    }
+    .bag-icon {
+        margin: 1.2rem auto 2rem auto;
+    }
+    
+    .sign-in , .sign-up {
+        margin: 0 auto;
+    }
+    .sign-up {
+        margin-bottom: 8px;
+    }
+    .sign-in {
+        margin-bottom: 3rem;
+    }
     nav .navigation {
         display: flex;
         flex-direction: column;
     }
+    
+    .show-child {
+        height: 27rem;
+    }
+
     .show-child .name {
         padding: 10px;
     }
+
     .show-child .price {
         padding: 10px;
     }
+
     .footer-col {
         width: 50%;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width:480px) {
-    header .header-logo {
-        display: none;
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
         }
-    header .header-input {
-        width: 15rem
+    header .header-logo {
+        margin-bottom: 1rem;
     }
+
+    header .header-input {
+        width: 18rem;
+        margin: 0 auto;
+    }
+    .bag-icon {
+        margin: 1rem auto 2rem auto;
+    }
+    .sign-in, .sign-up {
+        margin: 0 auto;
+    }
+    .sign-up {
+        margin-top: 2.7rem;
+        margin-bottom: 8px;
+    }
+
     nav .navigation {
         display: flex;
         flex-direction: column;
     }
+    .recently-items {
+        overflow-y: scroll;
+    }
+    .recently-items .list-items {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 1rem;
+    }
     .show-child {
         width: 80%;
         margin: 10px auto;
+        height: 27rem;
     }
+
     .show-child .name, .show-child .price {
         padding: 10px;
     }
+
     .footer .container {
         margin-top: 2rem;
         width: 100%;
     }
+
     .footer-col li a {
         line-height: 2;
         text-align: center;
@@ -462,9 +631,11 @@ nav .navigation li a:hover:after {
         align-items: center;
         margin-bottom: 8px;
     }
+
     .footer-col {
         width: 100%;
     }
+
     .footer {
         padding: 40px 16px;
     }

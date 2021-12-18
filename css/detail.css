@@ -1,6 +1,16 @@
+.detail-product {
+    max-width: 1200px;
+}
+.decription-product {
+    width: 900px;
+    float:left;
+}
+footer {
+    clear:both;
+}
 .box {
+    width: 70%;
     margin:2rem;
-    width: 65vw;
     background-color: white;
     border: 1px solid #666;
     height: 250px;
@@ -22,11 +32,15 @@
 .product-images {
     display: flex;
     list-style: none;
-    width: 60vw;
+    
 }
 .product-images-items  {
     width: 2rem;
     background-color: red;
     margin:2rem;
+}
+.product-quantity {
+    max-width: 300px;
+    float:right;
 }
 

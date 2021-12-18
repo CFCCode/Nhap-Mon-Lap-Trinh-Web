@@ -1,3 +1,8 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
 .footer {
     margin-top: 3rem;
     background-color: #2f3640;
@@ -70,7 +75,7 @@
 
 .footer-col h4:hover {
     cursor: default;
-    text-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6, 0 0 40px #00ffa6, 0 0 40px #00ffa6;
+    text-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6, 0 0 40px #00ffa6;
 }
 
 .social-links {
