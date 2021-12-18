@@ -45,7 +45,9 @@ form {
     transform: translateY(-50%);
     right: 20px;
 }
-
+::placeholder {
+    font-size: 1.1rem;
+}
 header .header-logo {
     float: left;
     clear: both;
@@ -212,7 +214,9 @@ nav .navigation li a:hover:after {
     height: 4rem;
     margin-bottom: 10px;
 }
-
+.list-items img:hover {
+    opacity: .8;
+}
 .list-items li a {
     display: block;
     text-decoration: none;
@@ -242,6 +246,9 @@ nav .navigation li a:hover:after {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.show-child img:hover {
+    opacity: .8;
 }
 
 .show-child .name {
@@ -530,7 +537,7 @@ nav .navigation li a:hover:after {
         margin-bottom: 1rem;
         width: 210px;
     }
-    
+     
     .header-input {
         width: 25rem;
         margin: 0 auto;
@@ -552,7 +559,13 @@ nav .navigation li a:hover:after {
         display: flex;
         flex-direction: column;
     }
-    
+    .list-items img {
+        display: block;
+        width: 4rem;
+        margin: 0 auto;
+        height: 3rem;
+        margin-bottom: 10px;
+    }
     .show-child {
         height: 27rem;
     }
@@ -601,13 +614,7 @@ nav .navigation li a:hover:after {
         flex-direction: column;
     }
     .recently-items {
-        overflow-y: scroll;
-    }
-    .recently-items .list-items {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin-top: 1rem;
+      display: none;
     }
     .show-child {
         width: 80%;
