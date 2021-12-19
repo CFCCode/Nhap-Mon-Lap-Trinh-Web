@@ -9,6 +9,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #ecf0f1;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 header {
@@ -258,7 +261,7 @@ nav .navigation li a:hover:after {
     color: black;
     text-align: left;
     font-size: 1rem;
-    margin-left: 4px;
+    padding-left: 8px;
 }
 
 .show-child .price {
@@ -268,7 +271,7 @@ nav .navigation li a:hover:after {
     color: red;
     text-align: left;
     margin-top: 10px;
-    margin-left: 4px;
+    padding-left: 8px;
 }
 
 .show-child a {
