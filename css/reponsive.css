@@ -106,7 +106,7 @@ nav .navigation {
     align-items: center;
     list-style: none;
     background: #448AFF;
-    padding: 10px;
+    padding: 6px;
     animation: backgroundchange 10s linear infinite;
     margin-bottom: 1rem;
     border: 1px solid #6666;
@@ -469,7 +469,9 @@ nav .navigation li a:hover:after {
     header .header-logo {
         width: 210px;
     }
-
+    nav .navigation {
+        padding: 8px;
+    }
     nav .navigation li {
         padding: 8px;
     }
