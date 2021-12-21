@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="/img/Logo.png" alt="" class="header-logo"></a>
+        <a href="index.html"><img src="/img/Logo.png" alt="logo" class="header-logo" id="logo"></a>
         <div class="form-container">
             <form>
                 <input type="text" class="header-input" placeholder="Search here..">
@@ -28,66 +28,105 @@
     <!-- Thanh điều hướng -->
     <nav>
         <ul class="navigation">
-            <li><a href="index.html">Home <i class="fa fa-home"></i></a></li>
-            <li><a href="food.html">Food <i class="fa fa-hotdog"></i></a></li>
-            <li><a href="drink.html">Drink <i class="fa fa-mug-hot"></i></a></li>
-            <li><a href="other.html">Other<i class="fas fa-tasks"></i></a></li>
-            <li><a href="#root">Contact <i class="fa fa-phone"></i></a></li>
+            <li><a href="index.html">Trang Chủ <i class="fa fa-home"></i></a></li>
+            <li><a href="food.html">Thực Phẩm <i class="fa fa-hotdog"></i></a></li>
+            <li><a href="drink.html">Thức Uống <i class="fa fa-mug-hot"></i></a></li>
+            <li><a href="other.html">Khác<i class="fas fa-tasks"></i></a></li>
+            <li><a href="#root">Liên hệ<i class="fa fa-phone"></i></a></li>
         </ul>
     </nav>
     <div class="menu">
         <h3 id="thuc-pham">Thực Phẩm</h3>
         <ul>
-            <li id="trung-ga">Trứng gà</li>
+            <li id="trung-ga">Trứng gà, trứng vịt</li>
             <li id="thit-bo">Thịt bò</li>
             <li id="thit-ga">Thịt gà</li>
             <li id="thit-heo">Thịt heo</li>
             <li id="kho-ca">Khô cá</li>
-            <li id="mi-goi">Mì gói</li>
-            <li id="bo-trai">Bơ trái</li>
         </ul>
     </div>
     <div class="show">
+        <!-- Trứng gà, trứng vịt -->
         <div class="show-child trung-ga">
-            <img src="/img/20190510_161058_148527_qua-trung-ga.max-800x800.jpg" alt="">
+            <img src="/img/food/trung_ga.jpg" alt="Trứng gà">
             <span class="show-child name trung-ga">Trứng gà tươi hộp 10 trứng</span>
             <span class="show-child price trung-ga">25.000 <sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
+        <div class="show-child trung-ga">
+            <img src="/img/food/trung_vit.jpg" alt="Trứng gà">
+            <span class="show-child name trung-ga">Trứng vịt tươi hộp 6 trứng</span>
+            <span class="show-child price trung-ga">20.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <!-- Thịt bò -->
         <div class="show-child thit-bo">
-            <img src="/img/bo-ham-du-du-21.jpg" alt="">
+            <img src="/img/food/bo-ham-du-du-21.jpg" alt="Thịt bò">
             <span class="show-child name thit-bo">Thịt bò tươi cắt lát 250gram</span>
             <span class="show-child price thit-bo">52.000 <sup>đ</sup></span>
             <a href="#" class="">Chọn Mua</a>
         </div>
+        <div class="show-child thit-bo">
+            <img src="/img/food/vai_bo.jpg" alt="Thịt bò">
+            <span class="show-child name thit-bo">Vai bò 300gram</span>
+            <span class="show-child price thit-bo">52.000 <sup>đ</sup></span>
+            <a href="#" class="">Chọn Mua</a>
+        </div>
+        <div class="show-child thit-bo">
+            <img src="/img/food/bap_bo.jpg" alt="Thịt bò">
+            <span class="show-child name thit-bo">Bắp bò 400gram</span>
+            <span class="show-child price thit-bo">52.000 <sup>đ</sup></span>
+            <a href="#" class="">Chọn Mua</a>
+        </div>
+        <!-- Thịt gà -->
         <div class="show-child uc-ga">
-            <img src="/img/uc-ga.jpg" alt="">
+            <img src="/img/food/uc-ga.jpg" alt="Ức gà">
             <span class="show-child name uc-ga">Ức gà tươi 500gram</span>
-            <span class="show-child price uc-ga">80.000<sup>đ</sup></span>
+            <span class="show-child price uc-ga">40.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
-        <div class="show-child thit-heo">
-            <img src="/img/thit-vai-heo.jpg" alt="">
-            <span class="show-child name thit-heo">Thịt vai heo tươi 300gram</span>
-            <span class="show-child price thit-heo">60.000<sup>đ</sup></span>
+        <div class="show-child canh-ga">
+            <img src="/img/food/canh_ga.jpg" alt="Cánh gà">
+            <span class="show-child name canh-ga">Cánh gà tươi 500gram</span>
+            <span class="show-child price canh-ga">45.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
-        <div class="show-child my-hao-hao">
-            <img src="/img/myhaohao_pgfv_vccq.png" alt="">
-            <span class="show-child name my-hao-hao">Mỳ hảo hảo</span>
-            <span class="show-child price my-hao-hao">4.000<sup>đ</sup></span>
+        <div class="show-child dui-ga">
+            <img src="/img/food/dui_ga.jpg" alt="Đùi gà">
+            <span class="show-child name dui-ga">Đùi gà 500gram</span>
+            <span class="show-child price dui-ga">35.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
+        <!-- Thịt heo -->
+        <div class="show-child vai-heo">
+            <img src="/img/food/thit-vai-heo.jpg" alt="Thịt heo">
+            <span class="show-child name vai-heo">Thịt vai heo tươi 300gram</span>
+            <span class="show-child price vai-heo">60.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nac-heo">
+            <img src="/img/food/nac_dui_heo.jpg" alt="Thịt heo">
+            <span class="show-child name nac-heo">Nạc đùi heo 250gram</span>
+            <span class="show-child price nac-heo">90.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child dui-heo">
+            <img src="/img/food/dui_heo.jpg" alt="Thịt heo">
+            <span class="show-child name dui-heo">Đùi heo 1kg</span>
+            <span class="show-child price dui-heo">154.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <!-- Khô -->
         <div class="show-child kho-ca-chi">
-            <img src="/img/kho_ca_chi.jpg" alt="">
-            <span class="show-child name kho-ca-chi">Khô cá chỉ </span>
+            <img src="/img/food/kho_ca_chi.jpg" alt="Khô">
+            <span class="show-child name kho-ca-chi">Khô cá chỉ 500gram </span>
             <span class="show-child price kho-ca-chi">75.000 <sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
-        <div class="show-child bo-trai">
-            <img src="/img/bo.png" alt="">
-            <span class="show-child name bo-trai">Bơ trái</span>
-            <span class="show-child price bo-trai">15.000 <sup>đ</sup></span>
+        <div class="show-child kho-ca-sac">
+            <img src="/img/food/kho_ca.jpg" alt="Khô">
+            <span class="show-child name kho-ca-sac">Khô cá sặc bối 500gram </span>
+            <span class="show-child price kho-ca-sac">100.000 <sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
     </div>
@@ -95,35 +134,29 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>Về chúng tôi</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="index.html">Giới thiệu</a></li>
+                        <li><a href="#logo">Về đầu trang</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Online Shop</h4>
+                    <h4>Hỗ trợ</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Online</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow us</h4>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#">Our Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Theo dõi chúng tôi:</h4>
                     <div class="social-links">
                         <a href="#"> <i class="fa fa-facebook"></i></a>
                         <a href="#"> <i class="fa fa-instagram"></i></a>

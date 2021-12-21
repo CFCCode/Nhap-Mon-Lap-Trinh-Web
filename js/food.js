@@ -12,15 +12,15 @@ $(document).ready(function() {
     });
     $('#thit-ga').click(function() {
         $('.show-child').hide();
-        $('.uc-ga').show();
+        $(".uc-ga, .canh-ga, .dui-ga").show();
     });
     $('#thit-heo').click(function() {
         $('.show-child').hide();
-        $('.thit-heo').show();
+        $('.vai-heo, .nac-heo, .dui-heo').show();
     });
     $('#kho-ca').click(function() {
         $('.show-child').hide();
-        $('.kho-ca-chi').show();
+        $('.kho-ca-chi, .kho-ca-sac').show();
     });
     $('#mi-goi').click(function() {
         $('.show-child').hide();

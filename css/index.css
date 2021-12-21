@@ -11,7 +11,7 @@ body {
     background: #ecf0f1;
     max-width: 1200px;
     margin: 0 auto;
-
+    overflow-x: scroll;
 }
 
 header {
@@ -208,7 +208,9 @@ nav .navigation li a:hover:after {
     margin-top: 1rem;
 }
 
-.recently-items .list-items li {}
+.recently-items .list-items li a {
+    text-align: center;
+}
 
 .list-items img {
     display: block;
@@ -237,7 +239,7 @@ nav .navigation li a:hover:after {
 .show-child {
     background: #fff;
     margin: 1rem 0 0 1rem;
-    height: 22rem;
+    max-height: 30rem;
     border-radius: 1rem;
 }
 
@@ -570,7 +572,7 @@ nav .navigation li a:hover:after {
         margin-bottom: 10px;
     }
     .show-child {
-        height: 27rem;
+        height: 28rem;
     }
 
     .show-child .name {

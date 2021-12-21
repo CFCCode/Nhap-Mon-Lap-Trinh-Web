@@ -6,9 +6,9 @@
     border-radius: 8px;
     border: 1.5px solid gray;
     float: left;
-    max-height: 400px;
+    max-height: 600px;
     box-shadow: 0 4px 8px 0 gray;
-    background: linear-gradient(to right , #74b9ff, #0984e3, #81ecec );
+   background: linear-gradient(to right , #74b9ff, #0984e3, #81ecec );
 }
 
 .menu h3 {

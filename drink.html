@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,15 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="/img/Logo.png" alt="" class="header-logo"></a>
+        <a href="index.html"><img src="/img/Logo.png" alt="logo" class="header-logo" id="logo"></a>
         <div class="form-container">
             <form>
                 <input type="text" class="header-input" placeholder="Search here..">
                 <button type="submit" class="search-btn"><i class="fa fa-search header-icon__search"></i> </button>
             </form>
         </div>
-        <a href="shoppingBag.html" target="_blank"><i class="fas fa-shopping-bag fa-2x bag-icon" title="xem giỏ hàng"></i></a>
+        <a href="shoppingBag.html" target="_blank"><i class="fas fa-shopping-bag fa-2x bag-icon"
+                title="xem giỏ hàng"></i></a>
         <span class="sign-in"> <a href="signin.html">Sign in</a></span>
         <span class="sign-up"> <a href="signup.html">Sign up</a></span>
     </header>
@@ -36,26 +38,93 @@
         <h3 id="thuc-pham">Thức uống</h3>
         <ul>
             <li id="sua">Sữa</li>
-            <li id="nuoc">Nước Suối</li>
+            <li id="nuoc">Nước suối</li>
+            <li id="nuoc-ngot">Nước ngọt các loại</li>
+            <li id="nuoc-bu-khoang">Nước bù khoáng</li>
         </ul>
     </div>
     <div class="show">
+        <!-- Sữa -->
         <div class="show-child sua">
-            <img src="/img/e6c52fa2f6852ba26b9cab2e67a01df4.jpg" alt="">
+            <img src="/img/drink/e6c52fa2f6852ba26b9cab2e67a01df4.jpg" alt="Sữa tươi">
             <span class="show-child name sua">Sữa Vinamilk nguyên chất</span>
             <span class="show-child price sua">6.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
         <div class="show-child sua">
-            <img src="/img/sua-tuoi-it-duong-vinamilk-100-sua-tuoi-hop-1-lit-202104121637399877.jpg" alt="">
+            <img src="/img/drink/sua-tuoi-it-duong-vinamilk-100-sua-tuoi-hop-1-lit-202104121637399877.jpg"
+                alt="Sữa tươi">
             <span class="show-child name sua">Sữa tươi Vinamilk </span>
             <span class="show-child price sua">24.000 <sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
+        <div class="show-child sua">
+            <img src="/img/drink/sua_tuoi_th_truemilk.png" alt="Sữa tươi">
+            <span class="show-child name sua">Sữa tươi TH Truemilk</span>
+            <span class="show-child price sua">28.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <!-- Nước suối -->
         <div class="show-child nuoc">
-            <img src="/img/300mAquafinal.jpg" alt="">
+            <img src="/img/drink/300mAquafinal.jpg" alt="Nước khoáng">
             <span class="show-child name nuoc">Nước khoáng Aquafina 1.5l</span>
             <span class="show-child price nuoc">6.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc">
+            <img src="/img/drink/nuoc_lavie.jpg" alt="Nước suối">
+            <span class="show-child name nuoc">Nước suối lavie</span>
+            <span class="show-child price nuoc">5.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc">
+            <img src="/img/drink/nuoc-tinh-khiet-dasani-500ml-202002222052095128.jpg" alt="Nước suối">
+            <span class="show-child name nuoc">Nước khoáng Dasani</span>
+            <span class="show-child price nuoc">5.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <!-- Nước ngọt -->
+        <div class="show-child nuoc-ngot">
+            <img src="/img/drink/sting_dau.jpg" alt="Sting">
+            <span class="show-child name nuoc-ngot">Sting dâu 330ml</span>
+            <span class="show-child price nuoc-ngot">9.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc-ngot">
+            <img src="/img/drink/coca_cola.jpg" alt="CocaCola">
+            <span class="show-child name nuoc-ngot">CocaCola lon 300ml</span>
+            <span class="show-child price nuoc-ngot">7.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc-ngot">
+            <img src="/img/drink/tra_xanh_0do.jpg" alt="Trà xanh 0 độ">
+            <span class="show-child name nuoc-ngot">Trà xanh không độ chai 500ml</span>
+            <span class="show-child price nuoc-ngot">8.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc-ngot">
+            <img src="/img/drink/c2.jpg" alt="C2">
+            <span class="show-child name nuoc-ngot">Trà xanh vị chanh C2 chai 500ml </span>
+            <span class="show-child price nuoc-ngot">8.000 <sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <!-- Nước bù khoáng -->
+        <div class="show-child nuoc-bu-khoang">
+            <img src="/img/drink/nuoc_bu_khoang_6chai.jpg" alt="Nước bù khoáng">
+            <span class="show-child name nuoc-bu-khoang">Nươc bù khoáng 6 chai</span>
+            <span class="show-child price nuoc-bu-khoang">34.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc-bu-khoang">
+            <img src="/img/drink/nuoc_bu_khoang_1chai.jpg" alt="Nước bù khoáng">
+            <span class="show-child name nuoc-bu-khoang">Nươc bù khoáng</span>
+            <span class="show-child price nuoc-bu-khoang">6.000<sup>đ</sup></span>
+            <a href="#">Chọn Mua</a>
+        </div>
+        <div class="show-child nuoc-bu-khoang">
+            <img src="/img/drink/nuoc_revive.jpg" alt="Nước bù khoáng">
+            <span class="show-child name nuoc-bu-khoang">Nươc bù khoáng Revive 500ml</span>
+            <span class="show-child price nuoc-bu-khoang">8.000<sup>đ</sup></span>
             <a href="#">Chọn Mua</a>
         </div>
     </div>
@@ -63,35 +132,29 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>Về chúng tôi</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="index.html">Giới thiệu</a></li>
+                        <li><a href="#logo">Về đầu trang</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Online Shop</h4>
+                    <h4>Hỗ trợ</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Online</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow us</h4>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#">Our Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Theo dõi chúng tôi:</h4>
                     <div class="social-links">
                         <a href="#"> <i class="fa fa-facebook"></i></a>
                         <a href="#"> <i class="fa fa-instagram"></i></a>
@@ -105,4 +168,5 @@
 </body>
 <script src="libs/jquery-3.6.0.min.js"></script>
 <script src="js/drink.js"></script>
+
 </html>
