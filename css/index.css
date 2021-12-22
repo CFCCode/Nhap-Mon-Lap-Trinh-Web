@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -113,6 +113,7 @@ nav .navigation {
     animation: backgroundchange 10s linear infinite;
     margin-bottom: 1rem;
     border: 1px solid #6666;
+    border-right: transparent;
 
 }
 @keyframes backgroundchange {
@@ -136,9 +137,11 @@ nav .navigation li {
 }
 
 nav .navigation li i {
-    margin-left: 1px;
-    font-size: 1rem;
+    margin-left: 6px;
+    position: absolute;
+    transform: translateY(4px);
     text-align: center;
+    font-size: 1rem;
 }
 
 nav .navigation li a {
@@ -210,6 +213,7 @@ nav .navigation li a:hover:after {
 
 .recently-items .list-items li a {
     text-align: center;
+    font-family: 'Roboto';
 }
 
 .list-items img {
@@ -367,7 +371,7 @@ nav .navigation li a:hover:after {
     font-size: 20px;
     color: skyblue;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
     transition: .25s linear;
     position: relative;
 }
