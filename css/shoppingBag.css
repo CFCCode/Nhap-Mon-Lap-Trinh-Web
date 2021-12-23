@@ -20,7 +20,7 @@ table th:last-child {
     width: 200px;
 }
 
-table, td, th, tr {
+table, tr, td, th{
     border: 1px solid black;
 }
 
