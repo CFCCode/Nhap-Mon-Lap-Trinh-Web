@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -6,31 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="/css/signup.css">
-    <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="header">
-        <a href="index.html"><img src="/img/Logo.png" alt="logo" class="header logo"></a>
+        <a href="index.html"><img src="/img/Logo.png" alt="logo" class="header logo" id="logo"></a>
     </div>
     <div class="login-box">
         <h1>Sign Up</h1>
         <form action="post">
-            <label for="email">Email or phone number:</label><br>
-            <input type="email" name="email" class="email" placeholder="Email or phone number" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" name="password" class="password" placeholder="Password" minlength="8" required><br>
-            <label for="password">Confirm Password:</label><br>
-            <input type="password" name="password" class="password" placeholder="Confirm password" minlength="8"
+            <label for="email">Email hoặc số điện thoại:</label><br>
+            <input type="email" name="email" class="email" placeholder="Email hoặc số điện thoại.." required><br>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" name="password" class="password" placeholder="Nhập mật khẩu của bạn.." minlength="8" required><br>
+            <label for="password">Xác nhận lại mật khẩu:</label><br>
+            <input type="password" name="password" class="password" placeholder="Xác nhận lại mật khẩu của bạn.." minlength="8"
                 required><br>
-            <input type="submit" class="sign-up" value="Sign up">
+            <input type="submit" class="sign-up" value="Đăng Nhập">
             <p class="line">
                 <span class="line-text">HOẶC</span>
             </p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="">Facebook</a>
-                <a href="https://www.google.com/"><img src="/img/google.jpg" alt="">Google</a>
+                <a href="https://www.facebook.com/"><img src="/img/facebook.png" class="facebook-icon" alt="">Facebook</a>
+                <a href="https://www.google.com/"><img src="/img/google.jpg" class="google-icon" alt="">Google</a>
             </div>
         </form>
     </div>
@@ -38,35 +40,29 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>Về chúng tôi</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="index.html">Giới thiệu</a></li>
+                        <li><a href="#logo">Về đầu trang</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Online Shop</h4>
+                    <h4>Hỗ trợ</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Online</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow us</h4>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Theo dõi chúng tôi:</h4>
                     <div class="social-links">
                         <a href="#"> <i class="fa fa-facebook"></i></a>
                         <a href="#"> <i class="fa fa-instagram"></i></a>

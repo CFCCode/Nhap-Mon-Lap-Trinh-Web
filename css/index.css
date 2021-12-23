@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     background: #ecf0f1;
     max-width: 1200px;
     margin: 0 auto;
-
+    scroll-behavior:smooth;
 }
 
 header {
@@ -83,24 +83,32 @@ header .header-logo {
     background: #eb4d4b;
     color: white;
     border-radius: 8px;
+    
 }
 
 .sign-up a {
     text-decoration: none;
-    background: black;
+    background: #3d3d3d;
     color: #fff;
     padding: 1rem 1rem;
     border-radius: 8px;
     font-weight: bold;
 }
+.sign-in a , .sign-up a {
+    box-shadow: 5px 10px 8px #888888;
+}
 .sign-in:hover,
 .sign-up:hover {
     opacity: 0.8;
+}
+.carousel-inner img , .carousel-inner img {
+    height: 250px;
 }
 nav {
     margin-top: 1.5rem;
     top: 0;
     z-index: 100;
+    
 }
 
 nav .navigation {
@@ -113,6 +121,7 @@ nav .navigation {
     animation: backgroundchange 10s linear infinite;
     margin-bottom: 1rem;
     border: 1px solid #6666;
+    border-right: transparent;
 
 }
 @keyframes backgroundchange {
@@ -136,9 +145,11 @@ nav .navigation li {
 }
 
 nav .navigation li i {
-    margin-left: 1px;
-    font-size: 1rem;
+    margin-left: 6px;
+    position: absolute;
+    transform: translateY(4px);
     text-align: center;
+    font-size: 1rem;
 }
 
 nav .navigation li a {
@@ -192,13 +203,15 @@ nav .navigation li a:hover:after {
     margin-top: 1.5rem;
     background: #fff;
     padding: 8px;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
 }
 
 .recently-items .title {
     padding: 8px;
     font-size: 1rem;
     font-weight: bold;
-    line-height: 1rem;
+    line-height: 1.6;
 }
 
 .recently-items .list-items {
@@ -208,7 +221,10 @@ nav .navigation li a:hover:after {
     margin-top: 1rem;
 }
 
-.recently-items .list-items li {}
+.recently-items .list-items li a {
+    text-align: center;
+    font-family: 'Roboto';
+}
 
 .list-items img {
     display: block;
@@ -224,6 +240,7 @@ nav .navigation li a:hover:after {
     display: block;
     text-decoration: none;
     color: black;
+
 }
 
 .show {
@@ -237,7 +254,7 @@ nav .navigation li a:hover:after {
 .show-child {
     background: #fff;
     margin: 1rem 0 0 1rem;
-    height: 22rem;
+    max-height: 30rem;
     border-radius: 1rem;
 }
 
@@ -262,6 +279,8 @@ nav .navigation li a:hover:after {
     text-align: left;
     font-size: 1rem;
     padding-left: 8px;
+    font-family: 'Roboto' , sans-serif;
+
 }
 
 .show-child .price {
@@ -272,6 +291,8 @@ nav .navigation li a:hover:after {
     text-align: left;
     margin-top: 10px;
     padding-left: 8px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 18px;
 }
 
 .show-child a {
@@ -365,7 +386,7 @@ nav .navigation li a:hover:after {
     font-size: 20px;
     color: skyblue;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
     transition: .25s linear;
     position: relative;
 }
@@ -394,10 +415,10 @@ nav .navigation li a:hover:after {
     display: flex;
 }
 
-.social-links a {
-    display: block;
+.footer-col .social-links a {
+    display: inline-block;
     color: #ffff;
-    margin: 0 10px 10px 0;
+    margin: 0 12px 12px 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -405,6 +426,7 @@ nav .navigation li a:hover:after {
     line-height: 40px;
     text-align: center;
     animation: animate 4s linear infinite;
+    
 }
 
 @keyframes animate {
@@ -509,9 +531,11 @@ nav .navigation li a:hover:after {
 
     header .header-input {
         margin: 0;
-        width: 20rem;
+        width: 22rem;
     }
-
+    .sign-up {
+        display: none;
+    }
     nav .navigation li {
         padding: 4px;
     }
@@ -570,7 +594,7 @@ nav .navigation li a:hover:after {
         margin-bottom: 10px;
     }
     .show-child {
-        height: 27rem;
+        height: 28rem;
     }
 
     .show-child .name {

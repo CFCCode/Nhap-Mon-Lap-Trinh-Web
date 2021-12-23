@@ -8,4 +8,13 @@ $(document).ready(function() {
         $('.show-child').hide();
         $('.nuoc').show();
     });
+    $('#nuoc-ngot').click(function() {
+        $('.show-child').hide();
+        $('.nuoc-ngot').show();
+    });
+    $('#nuoc-bu-khoang').click(function() {
+        $('.show-child').hide();
+        $('.nuoc-bu-khoang').show();
+    });
+
 });
