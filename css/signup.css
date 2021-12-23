@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
-/* * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
     background: #ffffff;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: url(/img/signup_background.jpg);
 }
 
@@ -27,7 +27,7 @@ header {
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 10px 0 gray;
-    width: 450px;
+    width: 410px;
     height: 550px;
     margin: 0 auto;
     margin-top: 40px;
@@ -36,7 +36,7 @@ header {
 
 label {
     font-weight: bold;
-    margin: 10px 8%;
+    margin: 10px 7%;
     padding: 10px;
 }
 
@@ -57,6 +57,7 @@ input {
     margin: 0 auto;
     border-radius: 4px;
     border: 1px solid black;
+    font-size: 14px;
 }
 
 .sign-up {
@@ -102,12 +103,15 @@ input {
     justify-content: space-around;
     max-width: 400px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .social-icons img {
-    margin-right: 5px;
+    margin-right: .5rem;
     height: 32px;
 }
+
+
 
 .social-icons a {
     display: flex;
@@ -118,12 +122,13 @@ input {
     background: #1e90ff;
     padding: 8px 8px;
     text-decoration: none;
-    width: 8rem;
-    z-index: 10000;
+    width: 9rem;
+    z-index: 1000;
     font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 .social-icons a:hover {
@@ -175,13 +180,12 @@ footer {
 @media screen and (min-width:320px) and (max-width: 480px) {
     .login-box {
         width: 85%;
-        height: 590px;
+        height: 600px;
     }
 
     .social-icons {
         display: block;
     }
-
     .social-icons a {
         margin: 10px auto;
     }

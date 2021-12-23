@@ -11,7 +11,7 @@ body {
     background: #ecf0f1;
     max-width: 1200px;
     margin: 0 auto;
-    overflow-x: scroll;
+    scroll-behavior:smooth;
 }
 
 header {
@@ -83,24 +83,32 @@ header .header-logo {
     background: #eb4d4b;
     color: white;
     border-radius: 8px;
+    
 }
 
 .sign-up a {
     text-decoration: none;
-    background: black;
+    background: #3d3d3d;
     color: #fff;
     padding: 1rem 1rem;
     border-radius: 8px;
     font-weight: bold;
 }
+.sign-in a , .sign-up a {
+    box-shadow: 5px 10px 8px #888888;
+}
 .sign-in:hover,
 .sign-up:hover {
     opacity: 0.8;
+}
+.carousel-inner img , .carousel-inner img {
+    height: 250px;
 }
 nav {
     margin-top: 1.5rem;
     top: 0;
     z-index: 100;
+    
 }
 
 nav .navigation {
@@ -195,13 +203,15 @@ nav .navigation li a:hover:after {
     margin-top: 1.5rem;
     background: #fff;
     padding: 8px;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
 }
 
 .recently-items .title {
     padding: 8px;
     font-size: 1rem;
     font-weight: bold;
-    line-height: 1rem;
+    line-height: 1.6;
 }
 
 .recently-items .list-items {
@@ -230,6 +240,7 @@ nav .navigation li a:hover:after {
     display: block;
     text-decoration: none;
     color: black;
+
 }
 
 .show {
@@ -268,6 +279,8 @@ nav .navigation li a:hover:after {
     text-align: left;
     font-size: 1rem;
     padding-left: 8px;
+    font-family: 'Roboto' , sans-serif;
+
 }
 
 .show-child .price {
@@ -278,6 +291,8 @@ nav .navigation li a:hover:after {
     text-align: left;
     margin-top: 10px;
     padding-left: 8px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 18px;
 }
 
 .show-child a {
@@ -400,10 +415,10 @@ nav .navigation li a:hover:after {
     display: flex;
 }
 
-.social-links a {
-    display: block;
+.footer-col .social-links a {
+    display: inline-block;
     color: #ffff;
-    margin: 0 10px 10px 0;
+    margin: 0 12px 12px 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -411,6 +426,7 @@ nav .navigation li a:hover:after {
     line-height: 40px;
     text-align: center;
     animation: animate 4s linear infinite;
+    
 }
 
 @keyframes animate {
@@ -515,9 +531,11 @@ nav .navigation li a:hover:after {
 
     header .header-input {
         margin: 0;
-        width: 20rem;
+        width: 22rem;
     }
-
+    .sign-up {
+        display: none;
+    }
     nav .navigation li {
         padding: 4px;
     }
