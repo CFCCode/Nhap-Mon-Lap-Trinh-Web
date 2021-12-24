@@ -8,9 +8,11 @@
 body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/img/signup_background.jpg);
+    background: url(/img/signup_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 100%;
+    background-position: center;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -25,7 +27,7 @@ header {
 
 .login-box {
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 10px 0 gray;
     width: 410px;
     height: 550px;
@@ -50,7 +52,7 @@ label {
 }
 
 input {
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 16px;
     display: block;
     width: 80%;

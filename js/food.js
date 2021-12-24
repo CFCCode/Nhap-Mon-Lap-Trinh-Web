@@ -30,4 +30,8 @@ $(document).ready(function() {
         $('.show-child').hide();
         $('.bo-trai').show();
     });
+    $('#gao').click(function() {
+        $('.show-child').hide();
+        $('.gao').show();
+    });
 });

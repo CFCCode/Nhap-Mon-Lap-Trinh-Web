@@ -185,7 +185,7 @@ nav .navigation li a:after {
     height: 4px;
     width: 0;
     left: 0;
-    bottom: -7px;
+    bottom: -4px;
     transition: .4s ease-in-out;
 }
 
@@ -261,6 +261,7 @@ nav .navigation li a:hover:after {
     height: 50px;
     line-height: 50px;
     font-weight: bold;
+    overflow-wrap: break-word;
 }
 .show-child {
     background: #fff;
@@ -604,6 +605,9 @@ nav .navigation li a:hover:after {
         height: 3rem;
         margin-bottom: 10px;
     }
+    .featured {
+        font-size: 18px;
+    }
     .show-child {
         height: 28rem;
     }
@@ -653,6 +657,9 @@ nav .navigation li a:hover:after {
     }
     .recently-items {
       display: none;
+    }
+    .featured {
+       display: none;
     }
     .show-child {
         width: 80%;

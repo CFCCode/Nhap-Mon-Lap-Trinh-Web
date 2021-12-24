@@ -10,6 +10,9 @@ body {
     background: #FAFAFA;
     font-family: 'montserrat', sans-serif;
     background-image: url(/img/signin_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 100%;
+    background-position: center;
 }
 
 header {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Bag</title>
+    <title>Giỏ Hàng</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/shoppingBag.css">
     <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
@@ -20,8 +20,8 @@
             </form>
         </div>
         <a href="shoppingBag.html" target="_blank"><i class="fas fa-shopping-bag fa-2x bag-icon" title="xem giỏ hàng"></i></a>
-        <span class="sign-in"> <a href="signin.html">Đăng nhập</a></span>
-        <span class="sign-up"> <a href="signup.html">Đang ký</a></span>
+        <span class="sign-in"> <a href="signin.html">Đăng Nhập</a></span>
+        <span class="sign-up"> <a href="signup.html">Đăng Ký</a></span>
     </header>
     <!-- Thanh điều hướng -->
     <nav>
@@ -34,30 +34,25 @@
         </ul>
     </nav>
     <div class="gio-hang">
-        <h2>Gio hang:</h1>
+        <h2>Giỏ Hàng</h1>
     </div>
     <div class="products">
         <table id="table">
             <tr>
-                <th>hinh hanh</th>
-                <th>ten san pham</th>
-                <th>So luong</th>
-                <th>don gia</th>
-                <th>tong so tien</th>
-                <th>Xoa</th>
+                <th>Hình Ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Số Lượng</th>
+                <th>Đơn Giá</th>
+                <th>Tổng Số Tiền </th>
+                <th>Xóa</th>
             </tr>
             <tr class="row-prod">
-                <td><img src="img/bo.png" alt="" width="100" height="100"></td>
-                <td>bo</td>
-                <td><input type="number" step="1" value="1"></td>
-                <td>15.000d</td>
-                <td>15.000d</td>
-                <td><i id="delete" class="far fa-trash-alt fa-2x"></i></td>
+                
             </tr>
         </table>
     </div>
     <div class="thanh-toan">
-        <button type="button">Thanh toan</button>
+        <button type="button">Thanh Toán</button>
     </div>
     <footer id="root" class="footer">
         <div class="container">
@@ -81,7 +76,7 @@
                     <h4>Liên hệ</h4>
                     <ul>
                         <li><a href="#">Quy chế hoạt động</a></li>
-                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Đường dây nóng</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -98,78 +93,6 @@
     </footer>
 </body>
 <script src="libs/jquery-3.6.0.min.js"></script>
-<script>
-    var product1 = {
-        "image" : 'img/khau-trang-y-te.png',
-        "title" : 'Khau trang y te',
-        "price" : '27.000d',
-    };
-    var product2 = {
-        "image" : 'img/dauan.jpg',
-        "title" : 'Dau an',
-        "price" : '25.000d',
-    };
-    var product3 = {
-        "image" : 'img/duong.png',
-        "title" : 'Duong tinh luyen',
-        "price" : '20.000d',
-    };
-    var products = [product1, product2];
-    products.push(product3);
-    products.forEach((p, index) => {
-        var table = document.getElementById('table');
-        var tr = document.createElement('tr');
-        var td1 = document.createElement('td');
-        var td2 = document.createElement('td');
-        var td3 = document.createElement('td');
-        var td4 = document.createElement('td');
-        var td5 = document.createElement('td');
-        var td6 = document.createElement('td');
+<script src="js/shoppingBag.js"></script>
 
-        tr.className = 'row-prod';
-        var img = document.createElement('img');
-        img.src = p.image;
-        img.width = 100;
-        img.height = 100;
-        td1.appendChild(img);
-        td2.innerHTML = p.title;
-        var input = document.createElement('input');
-        input.type = 'number';
-        input.step = 1;
-        input.value = 1;
-        td3.appendChild(input);
-        td4.innerHTML = p.price;
-        td5.innerHTML = p.price;
-        td6.innerHTML = '<i id="delete' + index + '" class="far fa-trash-alt fa-2x"></i>';
-
-
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        tr.appendChild(td3);
-        tr.appendChild(td4);
-        tr.appendChild(td5);
-        tr.appendChild(td6);
-        table.appendChild(tr);
-    });
-    var deletes = document.getElementById('delete');
-    deletes.addEventListener('click', () => {
-        deletes.parentElement.parentElement.style.display = 'none';
-    });
-    var delete0 = document.getElementById('delete0');
-    delete0.addEventListener('click', () => {
-        delete0.parentElement.parentElement.style.display = 'none';
-    });
-    var delete1 = document.getElementById('delete1');
-    delete1.addEventListener('click', () => {
-        delete1.parentElement.parentElement.style.display = 'none';
-    });
-    var delete2 = document.getElementById('delete2');
-    delete2.addEventListener('click', () => {
-        delete2.parentElement.parentElement.style.display = 'none';
-    });
-    var delete3 = document.getElementById('delete3');
-    delete3.addEventListener('click', () => {
-        delete3.parentElement.parentElement.style.display = 'none';
-    });
-</script>
 </html>

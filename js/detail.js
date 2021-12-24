@@ -1,9 +1,11 @@
-$(document).ready(function() {
-    // $('.show-child img').click(function(){
-    //     $('.show-child img')
-    // });
-    var img = document.createElement('img');
-    img.src = "/img/all/20190510_161058_148527_qua-trung-ga.max-800x800.jpg";
-    var block = document.getElementById("box-product");
-    block.appendChild(img);
+$(document).ready(function(){
+    $('.show-child img').click(function(){
+        $('#box-product').append('.show-child img');
+    });
 });
+function dieu_huong() {
+    location.assign("detail.html");
+    var newElement = document.createElement('img');
+    newElement.src = " https://vinid.net/blog/gia-trung-ga-la-bao-nhieu-mua-o-dau-an-toan/";
+    document.getElementById('box-product').appendChild(newElement);
+}

@@ -11,28 +11,30 @@
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/8390dbb419.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div class="header">
         <a href="index.html"><img src="/img/Logo.png" alt="logo" class="header logo" id="logo"></a>
     </div>
     <div class="login-box">
         <h1>Sign Up</h1>
-        <form action="post">
-            <label for="email">Email hoặc số điện thoại:</label><br>
-            <input type="email" name="email" class="email" placeholder="Email hoặc số điện thoại.." required><br>
+        <form action="#" name="frm" method="post" onsubmit="return Check()">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" class="email" placeholder="sinhvien@gmail.com" required minlength="8"><br>
             <label for="password">Mật khẩu:</label><br>
-            <input type="password" name="password" class="password" placeholder="Nhập mật khẩu của bạn.." minlength="8" required><br>
-            <label for="password">Xác nhận lại mật khẩu:</label><br>
-            <input type="password" name="password" class="password" placeholder="Xác nhận lại mật khẩu của bạn.." minlength="8"
+            <input type="password" name="password" class="password" placeholder="Nhập mật khẩu của bạn.." minlength="8"
                 required><br>
-            <input type="submit" class="sign-up" value="Đăng Nhập">
+            <label for="password">Xác nhận lại mật khẩu:</label><br>
+            <input type="password" name="confirmPassword" class="password" placeholder="Xác nhận lại mật khẩu của bạn.."
+                minlength="8" required><br>
+            <input type="submit" class="sign-up" value="Đăng Ký" onclick="chuyenHuong()">
             <p class="line">
                 <span class="line-text">HOẶC</span>
             </p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/"><img src="/img/facebook.png" class="facebook-icon" alt="">Facebook</a>
-                <a href="https://www.google.com/"><img src="/img/google.jpg" class="google-icon" alt="">Google</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png" class="facebook-icon"
+                        alt="">Facebook</a>
+                <a href="https://myaccount.google.com/" target="_blank"><img src="/img/google.jpg" class="google-icon"
+                        alt="">Google</a>
             </div>
         </form>
     </div>
@@ -75,5 +77,6 @@
     </footer>
 
 </body>
+<script src="js/signup.js"></script>
 
 </html>
